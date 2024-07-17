@@ -1,0 +1,27 @@
+{
+  "name": "@config/plugins",
+  "version": "0.0.1",
+  "description": "",
+  "exports": {
+    ".": {
+      "import": "./index.ts",
+      "require": "./lib/cjs/index.js"
+    }
+  },
+  "main": "./index.ts",
+  "module": "./index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "unocss": "^0.61.0",
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.27.2",
+    "vite-plugin-svg-icons": "2.0.1",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-monaco-editor": "1.1.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

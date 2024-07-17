@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  web:
+    image: gplane/pnpm:9.1.2-node18-alpine
+    working_dir: /opt/hl-pro/web
+    volumes:
+      - ./web:/opt/hl-pro/web
+    command: >
+      sh -c "
+        cd /opt/hl-pro/web &&
+        pnpm install --frozen-lockfile &&
+        pnpm run build
+      "
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "1880:80"
+    environment:
+      - LANG=zh_CN.UTF-8
+    volumes:
+      - ./web/dist:/var/www/html/hl-pro
+      - ./deploy/web.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - web
+      - server
+    restart: always
+    networks:
+      - internal
+
+  server:
+    image: seven45/pdm-ci:3.11-alpine
+    working_dir: /opt/hl-pro
+    command: >
+      sh -c "
+        pdm config pypi.url https://pypi.tuna.tsinghua.edu.cn/simple/ &&
+        pdm install --frozen-lockfile --no-editable &&
+        pdm run run.py
+      "
+    environment:
+      - LANG=zh_CN.UTF-8
+    volumes:
+      - .:/opt/hl-pro
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge

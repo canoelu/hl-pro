@@ -1,0 +1,15 @@
+{
+  "name": "@config/tsconfig",
+  "version": "0.0.1",
+  "description": "",
+  "files": [
+    "base.json",
+    "server.json"
+  ],
+  "private": true,
+  "keywords": [
+    "tsconfig"
+  ],
+  "author": "canoe",
+  "license": "ISC"
+}

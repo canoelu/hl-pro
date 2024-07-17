@@ -1,0 +1,372 @@
+2024-07-17T07:21:42.876517Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies"), AnchoredSystemPathBuf(".turbo\\cookies\\.turbo-cookie"), AnchoredSystemPathBuf(".turbo")}
+2024-07-17T07:21:42.877641Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:43.051758Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-07-17T07:21:43.697152Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-07-17T07:21:46.685335Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:46.685362Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:47.189118Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:47.189145Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:47.580662Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:47.580813Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:47.981090Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:47.981119Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:48.384083Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:48.384108Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:48.885516Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:48.885608Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:49.277316Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:49.277348Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:49.674458Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:49.674488Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:50.183422Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:50.183500Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:50.582895Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:50.582941Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:51.075993Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:51.076024Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:51.587954Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:51.588001Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:51.986608Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:51.986635Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:52.776484Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:52.776510Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:53.178612Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:53.178634Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:53.872743Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:53.873001Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:54.380389Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:54.380412Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:21:54.483535Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\vite.config.ts.timestamp-1721200914387-c8582d88c3468.mjs"), AnchoredSystemPathBuf("apps\\low-code")}
+2024-07-17T07:21:54.483560Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:21:56.630264Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T07:21:56.630294Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T07:22:52.075563Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code"), AnchoredSystemPathBuf("apps\\low-code\\vite.config.ts.timestamp-1721200914387-c8582d88c3468.mjs")}
+2024-07-17T07:22:52.075602Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:22:53.918775Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\router\\elegant\\imports.ts"), AnchoredSystemPathBuf("apps\\low-code\\src\\router\\elegant\\transform.ts"), AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\elegant-router.d.ts")}
+2024-07-17T07:22:53.918799Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:22:53.919411Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:23:05.166069Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\router\\elegant\\imports.ts")}
+2024-07-17T07:23:05.166118Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:23:05.957288Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:23:09.278032Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\auto-imports.d.ts")}
+2024-07-17T07:23:09.278053Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:23:10.095010Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:23:10.765764Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\router\\elegant\\routes.ts")}
+2024-07-17T07:23:10.765794Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:23:11.833155Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:23:11.833619Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\router\\elegant\\routes.ts")}
+2024-07-17T07:23:11.833639Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:23:11.834406Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:26:21.463539Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components"), AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu")}
+2024-07-17T07:26:21.463593Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:26:21.886728Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:26:25.258100Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu"), AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:26:25.258126Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:26:30.965434Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:26:30.965455Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:26:36.863718Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:26:36.863755Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:26:38.363515Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:26:38.363553Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:26:46.162245Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:26:46.162319Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:26:49.053210Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:26:49.053232Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:26:49.462689Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:26:49.462704Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:26:49.463103Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:27:11.159198Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:27:11.159229Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:27:12.353787Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:27:12.353824Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:27:27.457340Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:27:27.457379Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:28:05.453153Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:28:05.453239Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:28:09.952926Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:28:09.952953Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:28:10.463591Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:28:10.463613Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:28:10.464123Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:28:27.852627Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:28:27.852648Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:28:32.148733Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:28:32.148758Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:28:43.948024Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\index.vue")}
+2024-07-17T07:28:43.948062Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:28:46.950327Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\index.vue")}
+2024-07-17T07:28:46.950360Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:29:03.353004Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\index.vue")}
+2024-07-17T07:29:03.353029Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:29:56.511811Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:29:56.518193Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:33:21.244436Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\uno.config.ts")}
+2024-07-17T07:33:21.244653Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:35:03.820761Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:35:03.820819Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:35:14.018774Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:35:14.018793Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:35:14.440263Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:35:14.440280Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:35:14.440710Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:36:04.518399Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:36:04.518483Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:36:13.824424Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:36:13.824448Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:36:17.813015Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:36:17.813050Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:37:39.312886Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts"), AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks")}
+2024-07-17T07:37:39.312926Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:38:17.536495Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:38:17.536561Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:38:19.741629Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:38:19.741725Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:39:18.617906Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:39:18.617928Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:39:21.936905Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:39:21.936943Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:39:27.415822Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:39:27.415848Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:40:30.811274Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\utils\\common.ts")}
+2024-07-17T07:40:30.811321Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:40:51.419419Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:40:51.420015Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:41:02.851938Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:41:02.851963Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:41:18.914230Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:41:18.914409Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:41:22.717208Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:41:22.717233Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:41:25.504007Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:41:25.504072Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:41:35.801063Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:41:35.801090Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:41:36.247242Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:42:19.902341Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:42:19.902392Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:44:11.099787Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:44:11.099828Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:45:12.198395Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:45:12.198419Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:46:19.804796Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts"), AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:46:19.804823Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:46:21.198818Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:46:21.198854Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:46:40.088843Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:46:40.088875Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:46:43.201836Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:46:43.201991Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:46:52.499081Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:46:52.499127Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:46:52.946454Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:46:52.946511Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:46:52.947087Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:47:07.896314Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:47:07.896377Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:47:35.793150Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:47:35.793172Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:48:12.191755Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts"), AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:48:12.191785Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:48:13.016357Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts"), AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:48:13.016374Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:48:13.016766Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:48:13.294845Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:48:13.294979Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:48:22.802554Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\common.d.ts")}
+2024-07-17T07:48:22.802622Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:49:04.497144Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:49:04.497169Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:49:05.792239Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:49:05.792263Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:50:14.382989Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:50:14.383016Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:50:14.790388Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:50:14.790406Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:50:14.790841Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:50:18.391904Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:50:18.391925Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:50:57.085289Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:50:57.085316Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:51:34.994119Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:51:34.994148Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:51:39.782006Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:51:39.782028Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:51:40.206329Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:51:40.206345Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:51:40.206710Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:51:55.490962Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:51:55.490983Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:51:55.982969Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:51:55.982989Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:51:55.983403Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:52:11.878743Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:52:11.878766Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:53:00.482316Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:53:00.482344Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:53:03.386158Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:53:03.386180Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:53:19.378163Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:53:19.378195Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:53:24.477121Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:53:24.477145Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:53:28.776312Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:53:28.776341Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:53:58.173137Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:53:58.173227Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:54:03.275973Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:54:03.275994Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:54:05.288474Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:54:05.288557Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:54:19.885962Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:54:19.885999Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:54:59.472162Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\index.vue")}
+2024-07-17T07:54:59.472195Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:55:07.684700Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\index.vue")}
+2024-07-17T07:55:07.684734Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:55:15.382026Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\index.vue")}
+2024-07-17T07:55:15.382051Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:55:43.638831Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\index.vue")}
+2024-07-17T07:55:43.638934Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:56:01.270202Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T07:56:01.270246Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:57:27.577577Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:57:27.577606Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:57:29.081313Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:57:29.081335Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:57:51.379039Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:57:51.379530Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:57:53.798329Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:57:53.798364Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:57:53.800347Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T07:57:58.289128Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:57:58.289166Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:59:03.266525Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:59:03.266714Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T07:59:24.476113Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T07:59:24.476134Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:00:22.267496Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:00:22.267981Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:00:35.972067Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:00:35.972091Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:00:39.765716Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:00:39.765795Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:00:47.665670Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:00:47.665707Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:01:06.559488Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:01:06.559518Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:01:37.258659Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:01:37.258712Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:01:51.168247Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:01:51.168271Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:02:19.262575Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T08:02:19.262612Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:02:38.558922Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:02:38.558963Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:02:45.262202Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:02:45.262244Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:02:52.361207Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:02:52.361232Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:03:04.655519Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:03:04.655572Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:03:26.455151Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:03:26.455177Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:05:14.364739Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:05:14.364773Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:05:37.750492Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:05:37.750535Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:05:42.049694Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:05:42.049750Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:05:43.908937Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:05:43.908964Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:05:43.914536Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T08:05:54.647305Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:05:54.647349Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:06:48.655401Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:06:48.655485Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:06:55.573827Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:06:55.573899Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:07:07.055259Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:07:07.055299Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:07:16.153808Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:07:16.153837Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:07:20.054845Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:07:20.054916Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:07:32.256795Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:07:32.256837Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:07:51.747814Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:07:51.747855Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:08:02.560240Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-header\\index.vue")}
+2024-07-17T08:08:02.560277Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:09:00.847167Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T08:09:00.847198Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:09:17.552336Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\hooks\\use-design-style.ts")}
+2024-07-17T08:09:17.552949Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:10:06.952803Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T08:10:06.952861Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:10:15.553786Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T08:10:15.553822Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:10:47.153191Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T08:10:47.153226Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:11:53.797816Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T08:11:53.797868Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:11:55.766650Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T08:11:55.766989Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:11:55.769161Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-07-17T08:14:02.544877Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T08:14:02.545142Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:14:16.337166Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T08:14:16.337240Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:14:22.136416Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T08:14:22.137109Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:14:30.433704Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T08:14:30.433732Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-07-17T08:14:31.551700Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:31.551728Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:35.133398Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:35.133449Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:35.535971Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:35.535996Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:36.044659Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:36.044684Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:36.651826Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:36.651851Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:37.246803Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:37.246835Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:37.436296Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:37.436327Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:37.869742Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:37.869790Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:38.350395Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:38.350471Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:38.945151Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:38.945178Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:39.234101Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:39.234128Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:39.847864Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:39.847897Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:40.391461Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:40.391502Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:41.265013Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:41.265044Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:41.766899Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:41.766933Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:41.948838Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:41.948865Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:42.735357Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:42.735433Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:44.547056Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:44.547125Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:45.441979Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:45.442010Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:45.750048Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:45.750076Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:46.798920Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:46.798967Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:47.348886Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:47.348912Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:48.047419Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:48.047446Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:58.835350Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-07-17")}
+2024-07-17T08:14:58.835394Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-07-17T08:14:59.142987Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\views\\design\\components\\design-menu\\index.vue")}
+2024-07-17T08:14:59.143050Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))

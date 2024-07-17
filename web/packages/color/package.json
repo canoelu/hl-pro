@@ -1,0 +1,16 @@
+{
+  "name": "@hl/color",
+  "version": "0.0.1",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "typesVersions": {
+    "*": {
+      "*": ["./src/*"]
+    }
+  },
+  "dependencies": {
+    "@hl/utils": "workspace:*",
+    "colord": "2.9.3"
+  }
+}

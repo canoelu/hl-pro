@@ -1,0 +1,47 @@
+{
+  "tasks": {
+    "dev": {
+      "cache": false
+    },
+
+    "build": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^build"],
+      "cache": false
+    },
+    "build:ui": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["@hl-pro/constants#build", "@hl-pro/ui#build"],
+      "cache": false
+    },
+    "clean": {
+      "cache": false
+    },
+    "clean:cache": {
+      "cache": false
+    },
+
+    "lint": {
+      "cache": false,
+      "outputs": []
+    },
+    "lint:prettier": {
+      "cache": false,
+      "outputs": []
+    },
+
+    "format": {
+      "cache": false,
+      "outputs": []
+    },
+
+    "test": {
+      "outputs": ["coverage/**"],
+      "dependsOn": []
+    },
+
+    "release": {
+      "cache": false
+    }
+  }
+}
