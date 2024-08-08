@@ -1,0 +1,13 @@
+{
+  "name": "BasicPieChart",
+  "title": "基础饼状图",
+  "category": "PIE",
+  "categoryTitle": "饼状图",
+  "package": "charts",
+  "packageTitle": "图表",
+  "size": {
+    "width": 520,
+    "height": 260
+  },
+  "dataMode": "UNIVERSAL"
+}

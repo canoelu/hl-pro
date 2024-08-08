@@ -1,0 +1,20 @@
+{
+  "name": "@hl/helper",
+  "version": "0.0.1",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./src/*"
+      ]
+    }
+  },
+  "dependencies": {
+    "@hl/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "typed-css-modules": "0.9.1"
+  }
+}

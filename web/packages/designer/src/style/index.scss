@@ -1,0 +1,57 @@
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+/* 滚动槽 */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  border-radius: 2px;
+}
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #a3a3a3;
+}
+
+.designer-sidebar {
+  width: var(--designer-menu-width);
+  .hl-designer-menu-item {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 2px;
+      height: 0;
+      transition: 0.2s all linear;
+      border-left: 2px solid rgb(var(--primary-color));
+      background: rgb(var(--primary-color));
+    }
+
+    &:hover::before {
+      top: 0;
+      left: 0;
+      height: 100%;
+      border-left-color: rgb(var(--primary-color));
+      transition-delay: 0.1s;
+    }
+
+    &.active {
+      // color: rgb(var(--primary-color));
+      background: rgb(var(--primary-100-color));
+
+      &:before {
+        top: 0;
+        left: 0;
+        border-color: none;
+        height: 100%;
+      }
+    }
+  }
+
+  .hl-designer-menu-item:hover ~ .hl-designer-menu-item::before {
+    top: 0;
+    left: 0;
+  }
+}

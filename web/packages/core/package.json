@@ -1,0 +1,21 @@
+{
+  "name": "@hl/core",
+  "version": "0.0.1",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./*"
+      ]
+    }
+  },
+  "dependencies": {
+    "@hl/utils": "workspace:*",
+    "lodash-es": "4.17.21"
+  },
+  "devDependencies": {
+    "typed-css-modules": "0.9.1"
+  }
+}

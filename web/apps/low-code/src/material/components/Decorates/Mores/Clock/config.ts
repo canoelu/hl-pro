@@ -1,5 +1,5 @@
 import { PublicConfigClass } from '@/utils'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 import { ClockConfig } from './index'
 import cloneDeep from 'lodash/cloneDeep'
 
@@ -10,7 +10,7 @@ export const option = {
   borderColor: '#ffffff'
 }
 
-export default class Config extends PublicConfigClass implements CreateComponentType {
+export default class Config extends PublicConfigClass implements CreateMaterialType {
   public key = ClockConfig.key
   public chartConfig = cloneDeep(ClockConfig)
   public option = cloneDeep(option)

@@ -7,7 +7,6 @@
   </n-config-provider>
 </template>
 <script setup lang="ts">
-import { computed } from 'vue';
 import { NConfigProvider, darkTheme } from 'naive-ui';
 import { useAppStore } from './store/modules/app';
 import { useThemeStore } from './store/modules/theme';

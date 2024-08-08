@@ -14,6 +14,7 @@ module.exports = {
     jsxPragma: 'React',
     ecmaFeatures: {
       jsx: true,
+      tsx: true
     },
   },
   extends: [
@@ -22,7 +23,6 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   rules: {
-    'prettier/prettier': 'off',
     'no-unused-vars': 'off',
     'no-use-before-define': 'off',
     'space-before-function-paren': 'off',
@@ -51,10 +51,8 @@ module.exports = {
     'vue/v-on-event-hyphenation': 'off',
     'vue/one-component-per-file': 'off',
     'vue/html-closing-bracket-newline': 'off',
-    'vue/max-attributes-per-line': 'off',
     'vue/multiline-html-element-content-newline': 'off',
     'vue/singleline-html-element-content-newline': 'off',
-    'vue/attribute-hyphenation': 'off',
     'vue/require-default-prop': 'off',
     'vue/require-explicit-emits': 'off',
     'vue/html-self-closing': [
@@ -70,5 +68,7 @@ module.exports = {
       },
     ],
     'vue/multi-word-component-names': 'off',
+    'vue/valid-template-root': 'off',
+    'vue/no-mutating-props': 'off'
   },
 }

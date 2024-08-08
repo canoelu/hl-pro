@@ -18,11 +18,11 @@
 <script setup lang="ts">
 import { PropType } from 'vue'
 import { SettingItemBox } from '@/components/setting/ChartItemSetting'
-import { ConfigType } from '@/typings/design'
+import { MaterialItem } from '@/typings/design'
 
 const props = defineProps({
   chartConfig: {
-    type: Object as PropType<ConfigType>,
+    type: Object as PropType<MaterialItem>,
     required: true
   },
 })

@@ -1,0 +1,14 @@
+{
+  "name": "NormalText",
+  "title": "静态文本",
+  "category": "TEXT",
+  "categoryTitle": "文字",
+  "package": "Infos",
+  "packageTitle": "信息",
+  "icon": "mdi:information-outline",
+  "image": "text_static.png",
+  "size": {
+    "width": 150,
+    "height": 20
+  }
+}

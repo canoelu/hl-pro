@@ -1,6 +1,6 @@
 import { ref, nextTick, toRaw } from 'vue'
 import { useDesignEditStore } from '@/store/modules/design/editStore'
-// import { CreateComponentType, CreateComponentGroupType } from '@/typings/design'
+// import { CreateMaterialType, CreateMaterialGroupType } from '@/typings/design'
 import { renderIcon } from '@/utils/icon'
 import { MenuEnum } from '@/enums'
 import cloneDeep from 'lodash/cloneDeep'

@@ -4,7 +4,7 @@
 
 <script setup lang="ts">
 import { onMounted, PropType, ref, toRefs, watch } from 'vue'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 // import { useChartDataFetch } from '@/hooks'
 import { useDesignEditStore } from '@/store/modules/design/editStore'
 import { option } from './config'
@@ -13,7 +13,7 @@ import throttle from 'lodash/throttle'
 
 const props = defineProps({
   chartConfig: {
-    type: Object as PropType<CreateComponentType & typeof option>,
+    type: Object as PropType<CreateMaterialType & typeof option>,
     required: true
   }
 })

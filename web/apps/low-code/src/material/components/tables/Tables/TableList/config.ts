@@ -1,4 +1,4 @@
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 import { PublicConfigClass } from '@/utils/publicConfig'
 import { TableListConfig } from './index'
 import cloneDeep from 'lodash/cloneDeep'
@@ -31,7 +31,7 @@ export const option = {
   },
 }
 
-export default class Config extends PublicConfigClass implements CreateComponentType {
+export default class Config extends PublicConfigClass implements CreateMaterialType {
   public key = TableListConfig.key
   public chartConfig = cloneDeep(TableListConfig)
   public option = cloneDeep(option)

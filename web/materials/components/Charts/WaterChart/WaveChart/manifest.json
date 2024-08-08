@@ -1,0 +1,13 @@
+{
+  "name": "WaveChart",
+  "title": "水波图",
+  "category": "PROGERSS",
+  "categoryTitle": "水波图",
+  "package": "charts",
+  "packageTitle": "图表",
+  "size": {
+    "width": 200,
+    "height": 300
+  },
+  "dataMode": "UNIVERSAL"
+}

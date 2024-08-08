@@ -1,5 +1,5 @@
 import { PublicConfigClass } from '@/utils'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 import { FlipperNumberConfig } from './index'
 import cloneDeep from 'lodash/cloneDeep'
 import { chartInitConfig } from '@/constants'
@@ -33,7 +33,7 @@ export const option: OptionType = {
   flipperBorderWidth: 0,
 }
 
-export default class Config extends PublicConfigClass implements CreateComponentType {
+export default class Config extends PublicConfigClass implements CreateMaterialType {
   public key = FlipperNumberConfig.key
   public attr = { ...chartInitConfig, w: 300, h: 100, zIndex: -1 }
   public chartConfig = cloneDeep(FlipperNumberConfig)

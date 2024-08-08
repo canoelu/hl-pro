@@ -1,15 +1,15 @@
-import { ConfigType } from '@/typings/design'
+import { MaterialItem } from '@/typings/design'
 import { ChatCategoryEnum, ChatCategoryEnumName } from '../../index.d'
-import { PackagesCategoryEnum, ComponentFrameEnum } from '@/enums'
+import { MaterialPackageEnum, ComponentFrameEnum } from '@/enums'
 
-export const NumberConfig: ConfigType = {
+export const NumberConfig: MaterialItem = {
   key: 'Number',
   chartKey: 'VNumber',
   conKey: 'VCNumber',
   title: '数字计数',
   category: ChatCategoryEnum.MORE,
   categoryName: ChatCategoryEnumName.MORE,
-  package: PackagesCategoryEnum.DECORATES,
+  package: MaterialPackageEnum.DECORATES,
   chartFrame: ComponentFrameEnum.COMMON,
   image: 'number.png',
 }

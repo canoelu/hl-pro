@@ -1,5 +1,5 @@
 import { PublicConfigClass } from '@/utils'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 import { CountDownConfig } from './index'
 import cloneDeep from 'lodash/cloneDeep'
 import { chartInitConfig } from '@/constants'
@@ -39,7 +39,7 @@ export const option: OptionType = {
   flipperSpeed: 450
 }
 
-export default class Config extends PublicConfigClass implements CreateComponentType {
+export default class Config extends PublicConfigClass implements CreateMaterialType {
   public key = CountDownConfig.key
   public attr = { ...chartInitConfig, w: 500, h: 100, zIndex: -1 }
   public chartConfig = cloneDeep(CountDownConfig)

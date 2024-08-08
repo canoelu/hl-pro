@@ -1,5 +1,5 @@
 import { PublicConfigClass } from '@/utils'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 import { chartInitConfig } from '@/constants'
 import { FullScreenConfig } from './index'
 import cloneDeep from 'lodash/cloneDeep'
@@ -10,7 +10,7 @@ export const option = {
   borderColor: '#84a5e9'
 }
 
-export default class Config extends PublicConfigClass implements CreateComponentType {
+export default class Config extends PublicConfigClass implements CreateMaterialType {
   public key = FullScreenConfig.key
   public attr = { ...chartInitConfig, w: 150, h: 150, zIndex: -1 }
   public chartConfig = cloneDeep(FullScreenConfig)

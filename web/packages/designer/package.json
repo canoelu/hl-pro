@@ -1,0 +1,23 @@
+{
+  "name": "@hl/designer",
+  "version": "0.0.1",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./src/*"
+      ]
+    }
+  },
+  "dependencies": {
+    "@hl/core": "workspace:^",
+    "@hl/utils": "workspace:*",
+    "simplebar-vue": "2.3.4",
+    "vue3-sketch-ruler": "^1.3.3"
+  },
+  "devDependencies": {
+    "typed-css-modules": "0.9.1"
+  }
+}

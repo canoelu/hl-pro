@@ -19,13 +19,13 @@
 
 <script setup lang="ts">
 import { PropType, toRefs, ref, reactive, watch } from 'vue'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 // import { useDesignEditStore } from '@/store/modules/design/editStore'
 // import { useChartDataFetch } from '@/hooks'
 
 const props = defineProps({
   chartConfig: {
-    type: Object as PropType<CreateComponentType>,
+    type: Object as PropType<CreateMaterialType>,
     required: true
   }
 })

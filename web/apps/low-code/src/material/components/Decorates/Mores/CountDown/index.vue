@@ -30,14 +30,14 @@
 
 <script setup lang="ts">
 import { PropType, toRefs, watch, ref, onMounted } from 'vue'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 import { Flipper } from '@/components/setting/Flipper'
 import { OptionType } from './config'
 import { CountdownInst, CountdownProps } from 'naive-ui/es/countdown/src/Countdown'
 
 const props = defineProps({
   chartConfig: {
-    type: Object as PropType<CreateComponentType>,
+    type: Object as PropType<CreateMaterialType>,
     required: true
   }
 })

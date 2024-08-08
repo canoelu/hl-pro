@@ -1,5 +1,5 @@
 import { PublicConfigClass } from '@/utils'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 import { NumberConfig } from './index'
 import cloneDeep from 'lodash/cloneDeep'
 
@@ -18,7 +18,7 @@ export const option = {
   suffixColor: '#4a9ef8',
 }
 
-export default class Config extends PublicConfigClass implements CreateComponentType {
+export default class Config extends PublicConfigClass implements CreateMaterialType {
   public key = NumberConfig.key
   public chartConfig = cloneDeep(NumberConfig)
   public option = cloneDeep(option)

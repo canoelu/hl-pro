@@ -1,5 +1,5 @@
 import { PublicConfigClass } from '@/utils'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 import { FlowChartLineConfig } from './index'
 import cloneDeep from 'lodash/cloneDeep'
 
@@ -12,7 +12,7 @@ export const option = {
   animateCol: '#3788ea' //流动动画背景
 }
 
-export default class Config extends PublicConfigClass implements CreateComponentType {
+export default class Config extends PublicConfigClass implements CreateMaterialType {
   public key = FlowChartLineConfig.key
   public chartConfig = cloneDeep(FlowChartLineConfig)
   public option = cloneDeep(option)

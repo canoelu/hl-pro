@@ -34,12 +34,12 @@
 
 <script setup lang="ts">
 import { computed, PropType, toRefs, watch, reactive, ref } from 'vue'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 import { icon } from '@/plugins'
 
 const props = defineProps({
   chartConfig: {
-    type: Object as PropType<CreateComponentType>,
+    type: Object as PropType<CreateMaterialType>,
     required: true
   }
 })

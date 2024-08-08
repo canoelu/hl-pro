@@ -1,7 +1,6 @@
-
 <template>
   <DarkModeContainer class="h-full flex-y-center shadow-header">
-    <GlobalLogo v-if="showLogo" class="h-full" :style="{ width: themeStore.sider.width + 'px' }" />
+    <Logo v-if="showLogo" class="h-full" :style="{ width: themeStore.sider.width + 'px' }" />
     <HorizontalMenu v-if="showMenu" mode="horizontal" :menus="headerMenus" class="px-12px" />
     <div v-else class="h-full flex-y-center flex-1-hidden">
       <MenuToggler v-if="showMenuToggler" :collapsed="appStore.siderCollapse" @click="appStore.toggleSiderCollapse" />
@@ -11,11 +10,8 @@
       <GlobalSearch />
       <FullScreen v-if="!appStore.isMobile" :full="isFullscreen" @click="toggle" />
       <LangSwitch :lang="appStore.locale" :lang-options="appStore.localeOptions" @change-lang="appStore.changeLocale" />
-      <ThemeSchemaSwitch
-        :theme-schema="themeStore.themeScheme"
-        :is-dark="themeStore.darkMode"
-        @switch="themeStore.toggleThemeScheme"
-      />
+      <ThemeSchemaSwitch :theme-schema="themeStore.themeScheme" :is-dark="themeStore.darkMode"
+        @switch="themeStore.toggleThemeScheme" />
       <system-set />
       <UserAvatar />
     </div>
@@ -28,7 +24,7 @@ import { useAppStore } from '@/store/modules/app';
 import { useThemeStore } from '@/store/modules/theme';
 import { useRouteStore } from '@/store/modules/route';
 import HorizontalMenu from '../global-menu/base-menu.vue';
-import GlobalLogo from '../global-logo/index.vue';
+import Logo from '../logo/index.vue';
 import GlobalBreadcrumb from '../global-breadcrumb/index.vue';
 import GlobalSearch from '../global-search/index.vue';
 import { useMixMenuContext } from '../../context';
@@ -68,5 +64,3 @@ const headerMenus = computed(() => {
   return [];
 });
 </script>
-
-

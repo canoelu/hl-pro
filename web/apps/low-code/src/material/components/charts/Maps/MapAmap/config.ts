@@ -1,5 +1,5 @@
 import { PublicConfigClass } from '@/utils'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 import { MapAmapConfig } from './index'
 import { chartInitConfig } from '@/constants'
 import cloneDeep from 'lodash/cloneDeep'
@@ -99,7 +99,7 @@ export const option = {
   }
 }
 
-export default class Config extends PublicConfigClass implements CreateComponentType {
+export default class Config extends PublicConfigClass implements CreateMaterialType {
   public key = MapAmapConfig.key
   public attr = { ...chartInitConfig, w: 1000, h: 800, zIndex: -1 }
   public chartConfig = cloneDeep(MapAmapConfig)

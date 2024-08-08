@@ -1,0 +1,15 @@
+{
+  "name": "BasicBarChart",
+  "title": "基础柱状图",
+  "category": "BAR",
+  "categoryTitle": "柱状图",
+  "package": "charts",
+  "packageTitle": "图表",
+  "icon": "mdi:chart-line",
+  "image": "bar_line.png",
+  "size": {
+    "width": 500,
+    "height": 170
+  },
+  "dataMode": "UNIVERSAL"
+}

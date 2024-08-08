@@ -1,15 +1,15 @@
-import { ConfigType } from '@/typings/design'
+import { MaterialItem } from '@/typings/design'
 import { ChatCategoryEnum, ChatCategoryEnumName } from '../../index.d'
-import { PackagesCategoryEnum, ComponentFrameEnum } from '@/enums'
+import { MaterialPackageEnum, ComponentFrameEnum } from '@/enums'
 
-export const ClockConfig: ConfigType = {
+export const ClockConfig: MaterialItem = {
   key: 'Clock',
   chartKey: 'VClock',
   conKey: 'VCClock',
   title: '时钟',
   category: ChatCategoryEnum.MORE,
   categoryName: ChatCategoryEnumName.MORE,
-  package: PackagesCategoryEnum.DECORATES,
+  package: MaterialPackageEnum.DECORATES,
   chartFrame: ComponentFrameEnum.STATIC,
   image: 'clock.png',
 }

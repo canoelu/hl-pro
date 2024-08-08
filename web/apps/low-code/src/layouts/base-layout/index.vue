@@ -1,6 +1,5 @@
 <template>
-  <admin-layout
-    v-model:sider-collapse="appStore.siderCollapse"
+  <base-layout
     :mode="layoutMode"
     :scroll-el-id="LAYOUT_SCROLL_EL_ID"
     :scroll-mode="themeStore.layout.scrollMode"
@@ -11,13 +10,25 @@
     :tab-visible="themeStore.tab.visible"
     :tab-height="themeStore.tab.height"
     :content-class="appStore.contentXScrollable ? 'overflow-x-hidden' : ''"
-    :sider-visible="siderVisible"
-    :sider-width="siderWidth"
-    :sider-collapsed-width="siderCollapsedWidth"
-    :footer-visible="themeStore.footer.visible"
-    :footer-height="themeStore.footer.height"
-    :fixed-footer="themeStore.footer.fixed"
-    :right-footer="themeStore.footer.right"
+    :leftSider="{
+      visible:siderVisible,
+      width:siderWidth,
+      collapse:appStore.siderCollapse,
+      collapsedWidth:siderCollapsedWidth
+    }"
+     :rightSider="{
+      visible:siderVisible,
+      width:siderWidth,
+      collapse:appStore.siderCollapse,
+      collapsedWidth:siderCollapsedWidth
+    }"
+    :footer="{
+      visible:themeStore.footer.visible,
+      height:themeStore.footer.height,
+      fixed:themeStore.footer.fixed,
+      rightFooter:themeStore.footer.right
+    }"
+    @closeSidebar='handleCloseSidebar'
   >
     <template #header>
       <GlobalHeader v-bind="headerProps" />
@@ -30,12 +41,12 @@
     </template>
     <GlobalContent />
     <ThemeDrawer />
-  </admin-layout>
+  </base-layout>
 </template>
 
 <script setup lang="ts">
 import { computed } from 'vue';
-import { AdminLayout, LAYOUT_SCROLL_EL_ID } from '@hl/ui';
+import { BaseLayout, LAYOUT_SCROLL_EL_ID } from '@hl/ui';
 import type { LayoutMode } from '@hl/ui';
 import { useAppStore } from '@/store/modules/app';
 import { useThemeStore } from '@/store/modules/theme';
@@ -47,7 +58,7 @@ import ThemeDrawer from '../modules/theme-drawer/index.vue';
 import { setupMixMenuContext } from '../context';
 
 defineOptions({
-  name: 'BaseLayout'
+  name: 'SystemLayout'
 });
 
 const appStore = useAppStore();
@@ -117,6 +128,10 @@ function getSiderCollapsedWidth() {
   }
 
   return w;
+}
+function handleCloseSidebar(bool:boolean){
+  console.log(bool)
+  appStore.setSiderCollapse(bool)
 }
 </script>
 

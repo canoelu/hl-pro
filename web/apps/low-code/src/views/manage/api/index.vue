@@ -36,7 +36,7 @@
         :pagination="mobilePagination"
         class="sm:h-full"
       />
-      <ApiOperateDrawer
+      <api-operate-drawer
         v-model:visible="drawerVisible"
         :operate-type="operateType"
         :row-data="editingData"

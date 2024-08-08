@@ -8,7 +8,7 @@ import {
   RequestBodyEnum,
   ComponentFrameEnum,
 } from '@/enums'
-import { PublicConfigType, CreateComponentType, CreateComponentGroupType ,RequestConfigType} from '@/typings/design'
+import { PublicConfigType, CreateMaterialType, CreateMaterialGroupType ,RequestConfigType} from '@/typings/design'
 import { chartInitConfig, groupTitle } from '@/constants'
 import cloneDeep from 'lodash/cloneDeep'
 
@@ -102,7 +102,7 @@ export class PublicConfigClass implements PublicConfigType {
 }
 
 // 多选成组类
-export class PublicGroupConfigClass extends PublicConfigClass implements CreateComponentGroupType {
+export class PublicGroupConfigClass extends PublicConfigClass implements CreateMaterialGroupType {
   // 成组
   public isGroup = true
   // 名称
@@ -118,7 +118,7 @@ export class PublicGroupConfigClass extends PublicConfigClass implements CreateC
     image: '',
   }
   // 组成员列表
-  public groupList: Array<CreateComponentType> = []
+  public groupList: Array<CreateMaterialType> = []
   // ---- 原有 ---
   // key
   public key = 'group'

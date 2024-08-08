@@ -48,32 +48,32 @@ async function search() {
     <!-- <n-form ref="formRef" :model="model" :rules="rules" label-placement="left" :label-width="80"> -->
     <n-form ref="formRef" :model="model" label-placement="left" :label-width="80">
       <n-grid responsive="screen" item-responsive>
-        <NFormItemGi span="24 s:12 m:6" :label="$t('page.manage.api.method')" path="method" class="pr-24px">
+        <n-form-item-gi span="24 s:12 m:6" :label="$t('page.manage.api.method')" path="method" class="pr-24px">
           <n-select
             v-model:value="model.method"
             :placeholder="$t('page.manage.api.form.method')"
             :options="translateOptions(apiMethodOptions)"
             clearable
           />
-        </NFormItemGi>
-        <NFormItemGi span="24 s:12 m:6" :label="$t('page.manage.api.path')" path="path" class="pr-24px">
+        </n-form-item-gi>
+        <n-form-item-gi span="24 s:12 m:6" :label="$t('page.manage.api.path')" path="path" class="pr-24px">
           <n-input v-model:value="model.path" :placeholder="$t('page.manage.api.form.path')" />
-        </NFormItemGi>
-        <NFormItemGi span="24 s:12 m:6" :label="$t('page.manage.api.summary')" path="summary" class="pr-24px">
+        </n-form-item-gi>
+        <n-form-item-gi span="24 s:12 m:6" :label="$t('page.manage.api.summary')" path="summary" class="pr-24px">
           <n-input v-model:value="model.summary" :placeholder="$t('page.manage.api.form.summary')" />
-        </NFormItemGi>
-        <NFormItemGi span="24 s:12 m:6" :label="$t('page.manage.api.tags')" path="tags" class="pr-24px">
+        </n-form-item-gi>
+        <n-form-item-gi span="24 s:12 m:6" :label="$t('page.manage.api.tags')" path="tags" class="pr-24px">
           <n-input v-model:value="model.tags" :placeholder="$t('page.manage.api.form.tags')" />
-        </NFormItemGi>
-        <NFormItemGi span="24 s:12 m:6" :label="$t('page.manage.api.status')" path="status" class="pr-24px">
+        </n-form-item-gi>
+        <n-form-item-gi span="24 s:12 m:6" :label="$t('page.manage.api.status')" path="status" class="pr-24px">
           <n-select
             v-model:value="model.status"
             :placeholder="$t('page.manage.api.form.status')"
             :options="translateOptions(enableStatusOptions)"
             clearable
           />
-        </NFormItemGi>
-        <NFormItemGi span="24 m:18" class="pr-24px">
+        </n-form-item-gi>
+        <n-form-item-gi span="24 m:18" class="pr-24px">
           <n-space class="w-full" justify="end">
             <n-button @click="reset">
               <template #icon>
@@ -88,7 +88,7 @@ async function search() {
               {{ $t('common.search') }}
             </n-button>
           </n-space>
-        </NFormItemGi>
+        </n-form-item-gi>
       </n-grid>
     </n-form>
   </n-card>

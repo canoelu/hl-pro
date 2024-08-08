@@ -1,27 +1,4 @@
-import { PackagesCategoryEnum, FilterEnum, ComponentFrameEnum } from '@/enums'
-
-export type ComponentItem = {
-  key: string
-  componentKey: string
-  configKey: string
-  category: string
-  categoryName: string
-  image: string
-  disabled?: boolean
-  // 所属包
-  package: string
-  // 归类
-  chartFrame?: ComponentFrameEnum
-  // 从指定路径创建创建该组件
-  redirectComponent?: string
-  // 组件预设的 dataset 值(图片/图标)
-  dataset?: any
-
-  // 图标
-  icon?: string
-  // 事件
-  configEvents?: { [T: string]: Function }
-}
+import { MaterialPackageEnum, FilterEnum, ComponentFrameEnum } from '@/enums'
 
 // Echarts 数据类型
 interface EchartsDataType {
@@ -36,7 +13,7 @@ export interface StatusType {
 }
 
 // 组件配置
-export type ConfigType = {
+export type MaterialItem = {
   // 组件 key
   key: string
   // 画布组件 key
@@ -123,28 +100,37 @@ export interface GlobalThemeJsonType {
   renderer?: EchartsRenderer
   [T: string]: any
 }
+export interface CreateMaterialType extends PublicConfigType, requestConfig {
+  key: string
+  chartConfig: MaterialItem
+  option: GlobalThemeJsonType
+  groupList?: Array<CreateMaterialType>
+}
+
+// 图表包类型
+export type PackagesType = {
+  [MaterialPackageEnum.CHARTS]?: MaterialItem[]
+  [MaterialPackageEnum.INFORMATIONS]?: MaterialItem[]
+  [MaterialPackageEnum.TABLES]?: MaterialItem[]
+  [MaterialPackageEnum.PHOTOS]?: MaterialItem[]
+  [MaterialPackageEnum.ICONS]?: MaterialItem[]
+  [MaterialPackageEnum.DECORATES]?: MaterialItem[]
+}
+
+// 组件成组实例类
+export interface CreateMaterialGroupType extends CreateMaterialType {
+  groupList: Array<CreateMaterialType>
+}
+
+// 获取组件实例类中某个key对应value类型的方法
+export type PickCreateComponentType<T extends keyof CreateMaterialType> = Pick<CreateMaterialType, T>[T]
 export interface CreateComponentType extends PublicConfigType, requestConfig {
   key: string
   chartConfig: ConfigType
   option: GlobalThemeJsonType
   groupList?: Array<CreateComponentType>
 }
-
-// 图表包类型
-export type PackagesType = {
-  [PackagesCategoryEnum.CHARTS]?: ConfigType[]
-  [PackagesCategoryEnum.INFORMATIONS]?: ConfigType[]
-  [PackagesCategoryEnum.TABLES]?: ConfigType[]
-  [PackagesCategoryEnum.PHOTOS]?: ConfigType[]
-  [PackagesCategoryEnum.ICONS]?: ConfigType[]
-  [PackagesCategoryEnum.DECORATES]?: ConfigType[]
-}
-
 // 组件成组实例类
 export interface CreateComponentGroupType extends CreateComponentType {
   groupList: Array<CreateComponentType>
 }
-
-// 获取组件实例类中某个key对应value类型的方法
-export type PickCreateComponentType<T extends keyof CreateComponentType> = Pick<CreateComponentType, T>[T]
-

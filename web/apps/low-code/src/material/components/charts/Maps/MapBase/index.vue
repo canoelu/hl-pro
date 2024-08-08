@@ -2,7 +2,7 @@
   <div>
     <div class="back-icon" v-if="(enter && levelHistory.length !== 0) || (enter && !isPreview())" @click="backLevel">
       <n-icon :color="backColor" :size="backSize * 1.1">
-        <ArrowBackIcon />
+        <!-- <ArrowBackIcon /> -->
       </n-icon>
       <span
         :style="{
@@ -59,11 +59,11 @@ const props = defineProps({
   }
 })
 
-const { ArrowBackIcon } = icon.ionicons5
+// const { ArrowBackIcon } = icon.ionicons5
 let levelHistory: any = ref([])
 
-const { backColor, backSize, enter } = toRefs(props.chartConfig.option.mapRegion)
-const initOptions = useCanvasInitOptions(props.chartConfig.option, props.themeSetting)
+const { backColor, backSize, enter } = toRefs(props.chartConfig?.option?.mapRegion)
+const initOptions = useCanvasInitOptions(props.chartConfig?.option, props.themeSetting)
 
 use([
   MapChart,

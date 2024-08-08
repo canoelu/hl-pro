@@ -1,8 +1,8 @@
-import { ConfigType } from '@/typings/design'
+import { MaterialItem } from '@/typings/design'
 import { ImageConfig } from '@/material/components/Informations/Mores/Image/index'
 import { ChatCategoryEnum, ChatCategoryEnumName } from '../index.d'
 import { setLocalStorage, getLocalStorage, goDialog } from '@/utils'
-import { ComponentFrameEnum, StorageEnum, FileTypeEnum, PackagesCategoryEnum } from '@/enums'
+import { ComponentFrameEnum, StorageEnum, FileTypeEnum, MaterialPackageEnum } from '@/enums'
 import { backgroundImageSize } from '@/constants'
 // import { usePackagesStore } from '@/store/modules/packagesStore/packagesStore'
 
@@ -16,7 +16,7 @@ type UploadCompletedEventType = {
   url: string
 }
 
-const userPhotosList: ConfigType[] = getLocalStorage(StoreKey) || []
+const userPhotosList: MaterialItem[] = getLocalStorage(StoreKey) || []
 
 const uploadFile = (callback: Function | null = null) => {
   const input = document.createElement('input')
@@ -48,7 +48,7 @@ const addConfig = {
   ...ImageConfig,
   category: ChatCategoryEnum.PRIVATE,
   categoryName: ChatCategoryEnumName.PRIVATE,
-  package: PackagesCategoryEnum.PHOTOS,
+  package: MaterialPackageEnum.PHOTOS,
   chartFrame: ComponentFrameEnum.STATIC,
   title: '点击上传图片',
   image: 'upload.png',
@@ -56,7 +56,7 @@ const addConfig = {
   disabled: true,
   configEvents: {
     // 点击上传事件
-    addHandle: (photoConfig: ConfigType) => {
+    addHandle: (photoConfig: MaterialItem) => {
       goDialog({
         message: `图片需小于 ${backgroundImageSize}M 且只暂存在浏览器中。当前图片暂存上限5M，超过不再缓存新图片，请自行对接后端接口！现编译成 base64 进行渲染，对接后端后请使用【URL地址】进行交互！`,
         transformOrigin: 'center',
@@ -68,7 +68,7 @@ const addConfig = {
               ...ImageConfig,
               category: ChatCategoryEnum.PRIVATE,
               categoryName: ChatCategoryEnumName.PRIVATE,
-              package: PackagesCategoryEnum.PHOTOS,
+              package: MaterialPackageEnum.PHOTOS,
               chartFrame: ComponentFrameEnum.STATIC,
               title: e.fileName,
               image: e.url,

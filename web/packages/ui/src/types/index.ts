@@ -1,134 +1,94 @@
-interface AdminLayoutHeaderConfig {
+interface ILayoutConfig {
+  visible?: boolean
+  class?: string
+  height?: number
+  width?: number
+  mobileSiderClass?: string
+}
+interface BaseLayoutHeaderConfig extends ILayoutConfig {
   /**
-   * Whether header is visible
-   *
-   * @default true
-   */
-  headerVisible?: boolean;
-  /**
-   * Header class
    *
    * @default ''
    */
-  headerClass?: string;
-  /**
-   * Header height
-   *
-   * @default 56px
-   */
-  headerHeight?: number;
+  headerClass?: string
 }
 
 /** Tab config */
-interface AdminLayoutTabConfig {
-  /**
-   * Whether tab is visible
-   *
-   * @default true
-   */
-  tabVisible?: boolean;
+interface BaseLayoutTabConfig extends ILayoutConfig {
   /**
    * Tab class
    *
    * @default ''
    */
-  tabClass?: string;
-  /**
-   * Tab height
-   *
-   * @default 48px
-   */
-  tabHeight?: number;
+  tabClass?: string
 }
 
 /** Sider config */
-interface AdminLayoutSiderConfig {
-  /**
-   * Whether sider is visible
-   *
-   * @default true
-   */
-  siderVisible?: boolean;
+interface BaseLayoutSiderConfig extends ILayoutConfig {
   /**
    * Sider class
    *
    * @default ''
    */
-  siderClass?: string;
+  siderClass?: string
   /**
    * Mobile sider class
    *
    * @default ''
    */
-  mobileSiderClass?: string;
+  mobileSiderClass?: string
   /**
    * Sider collapse status
    *
    * @default false
    */
-  siderCollapse?: boolean;
-  /**
-   * Sider width when collapse is false
-   *
-   * @default '220px'
-   */
-  siderWidth?: number;
+  collapse?: boolean
+
   /**
    * Sider width when collapse is true
    *
    * @default '64px'
    */
-  siderCollapsedWidth?: number;
+  collapsedWidth?: number
 }
 
 /** Content config */
-export interface AdminLayoutContentConfig {
+export interface BaseLayoutContentConfig {
   /**
    * Content class
    *
    * @default ''
    */
-  contentClass?: string;
+  contentClass?: string
   /**
    * Whether content is full the page
    *
    * If true, other elements will be hidden by `display: none`
    */
-  fullContent?: boolean;
+  fullContent?: boolean
 }
 
 /** Footer config */
-export interface AdminLayoutFooterConfig {
-  /**
-   * Whether footer is visible
-   *
-   * @default true
-   */
-  footerVisible?: boolean;
+export interface BaseLayoutFooterConfig extends ILayoutConfig {
   /**
    * Whether footer is fixed
    *
    * @default true
    */
-  fixedFooter?: boolean;
+  fixed?: boolean
   /**
    * Footer class
    *
    * @default ''
    */
-  footerClass?: string;
-  /**
-   * Footer height
-   *
-   * @default 48px
-   */
-  footerHeight?: number;
+  footerClass?: string
+
   /**
    * Whether footer is on the right side
    *
    * When the layout is vertical, the footer is on the right side
    */
-  rightFooter?: boolean;
+  rightFooter?: boolean
 }
 
 /**
@@ -137,104 +97,44 @@ export interface AdminLayoutFooterConfig {
  * - Horizontal
  * - Vertical
  */
-export type LayoutMode = 'horizontal' | 'vertical';
+export type LayoutMode = 'horizontal' | 'vertical'
 
 /**
  * The scroll mode when content overflow
  *
- * - Wrapper: the layout component's wrapper element has a scrollbar
- * - Content: the layout component's content element has a scrollbar
+ * - Wrapper: 外层滚动
+ * - Content: 主体滚动
  *
  * @default 'wrapper'
  */
-export type LayoutScrollMode = 'wrapper' | 'content';
+export type LayoutScrollMode = 'wrapper' | 'content'
 
-/** Admin layout props */
-export interface AdminLayoutProps
-  extends AdminLayoutHeaderConfig,
-    AdminLayoutTabConfig,
-    AdminLayoutSiderConfig,
-    AdminLayoutContentConfig,
-    AdminLayoutFooterConfig {
-  /**
-   * Layout mode
-   *
-   * - {@link LayoutMode}
-   */
-  mode?: LayoutMode;
-  /** Is mobile layout */
-  isMobile?: boolean;
-  /**
-   * Scroll mode
-   *
-   * - {@link ScrollMode}
-   */
-  scrollMode?: LayoutScrollMode;
-  /**
-   * The id of the scroll element of the layout
-   *
-   * It can be used to get the corresponding Dom and scroll it
-   *
-   * @example
-   *   use the default id by import
-   *   ```ts
-   *   import { adminLayoutScrollElId } from '@sa/vue-materials';
-   *   ```
-   *
-   * @default
-   * ```ts
-   * const adminLayoutScrollElId = '__ADMIN_LAYOUT_SCROLL_EL_ID__'
-   * ```
-   */
-  scrollElId?: string;
-  /** The class of the scroll element */
-  scrollElClass?: string;
-  /** The class of the scroll wrapper element */
-  scrollWrapperClass?: string;
-  /**
-   * The common class of the layout
-   *
-   * Is can be used to configure the transition animation
-   *
-   * @default 'transition-all-300'
-   */
-  commonClass?: string;
-  /**
-   * Whether fix the header and tab
-   *
-   * @default true
-   */
-  fixedTop?: boolean;
-  /**
-   * The max z-index of the layout
-   *
-   * The z-index of Header,Tab,Sider and Footer will not exceed this value
-   */
-  maxZIndex?: number;
-}
-
-type Kebab<S extends string> = S extends Uncapitalize<S> ? S : `-${Uncapitalize<S>}`;
+type Kebab<S extends string> = S extends Uncapitalize<S> ? S : `-${Uncapitalize<S>}`
 
 type KebabCase<S extends string> = S extends `${infer Start}${infer End}`
   ? `${Uncapitalize<Start>}${KebabCase<Kebab<End>>}`
-  : S;
+  : S
 
-type Prefix = '--hl-';
+type Prefix = '--hl-'
 
-export type LayoutCssVarsProps = Pick<
-  AdminLayoutProps,
-  'headerHeight' | 'tabHeight' | 'siderWidth' | 'siderCollapsedWidth' | 'footerHeight'
-> & {
-  headerZIndex?: number;
-  tabZIndex?: number;
-  siderZIndex?: number;
-  mobileSiderZIndex?: number;
-  footerZIndex?: number;
-};
+export type LayoutCssVarsProps = {
+  headerHeight?: number
+  headerZIndex?: number
+  tabZIndex?: number
+  tabHeight?: number
+  siderZIndex?: number
+  mobileSiderZIndex?: number
+  footerZIndex?: number
+  siderWidth?: number
+  rightSiderWidth?: number
+  siderCollapsedWidth?: number
+  rightSiderCollapsedWidth?: number
+  footerHeight?: number
+}
 
 export type LayoutCssVars = {
-  [K in keyof LayoutCssVarsProps as `${Prefix}${KebabCase<K>}`]: string | number;
-};
+  [K in keyof LayoutCssVarsProps as `${Prefix}${KebabCase<K>}`]: string | number
+}
 
 /**
  * The mode of the tab
@@ -244,17 +144,17 @@ export type LayoutCssVars = {
  *
  * @default chrome
  */
-export type PageTabMode = 'button' | 'chrome';
+export type PageTabMode = 'button' | 'chrome'
 
 export interface PageTabProps {
   /** Whether is dark mode */
-  darkMode?: boolean;
+  darkMode?: boolean
   /**
    * The mode of the tab
    *
    * - {@link TabMode}
    */
-  mode?: PageTabMode;
+  mode?: PageTabMode
   /**
    * The common class of the layout
    *
@@ -262,32 +162,103 @@ export interface PageTabProps {
    *
    * @default 'transition-all-300'
    */
-  commonClass?: string;
+  commonClass?: string
   /** The class of the button tab */
-  buttonClass?: string;
+  buttonClass?: string
   /** The class of the chrome tab */
-  chromeClass?: string;
+  chromeClass?: string
   /** Whether the tab is active */
-  active?: boolean;
+  active?: boolean
   /** The color of the active tab */
-  activeColor?: string;
+  activeColor?: string
   /**
    * Whether the tab is closable
    *
    * Show the close icon when true
    */
-  closable?: boolean;
+  closable?: boolean
 }
 
 export type PageTabCssVarsProps = {
-  primaryColor: string;
-  primaryColor1: string;
-  primaryColor2: string;
-  primaryColorOpacity1: string;
-  primaryColorOpacity2: string;
-  primaryColorOpacity3: string;
-};
+  primaryColor: string
+  primaryColor1: string
+  primaryColor2: string
+  primaryColorOpacity1: string
+  primaryColorOpacity2: string
+  primaryColorOpacity3: string
+}
 
 export type PageTabCssVars = {
-  [K in keyof PageTabCssVarsProps as `${Prefix}${KebabCase<K>}`]: string | number;
-};
+  [K in keyof PageTabCssVarsProps as `${Prefix}${KebabCase<K>}`]: string | number
+}
+
+export interface IBaseLayout extends BaseLayoutContentConfig {
+  /**
+   * @default --hl-
+   */
+  prefix?: string
+  scrollWrapperClass?: string
+  /**
+   * 布局模式
+   * - {@link LayoutMode}
+   * @default vertical
+   */
+  mode: LayoutMode
+  /**
+   * @default 'transition-all-300'
+   */
+  commonClass?: string
+  /**
+   * 头部高度
+   * @default 56px
+   */
+  headerHeight?: number
+  /**
+   * 滚动元素ID
+   */
+  scrollElId?: string
+  /**
+   * tab高度
+   * @default 48
+   */
+  tabHeight?: number
+  /**
+   * @default false
+   */
+  isMobile?: boolean
+
+  footerHeight?: number
+  maxZIndex?: number
+  /**
+   * 是否固定顶部
+   */
+  fixedTop?: boolean
+  /**
+   * 是否显示头部
+   * @default true
+   */
+  headerVisible?: boolean
+  /**
+   * 滚动模式
+   * @default content
+   */
+  scrollMode?: LayoutScrollMode
+  header: BaseLayoutHeaderConfig
+  tab: BaseLayoutTabConfig
+  rightSider: BaseLayoutSiderConfig
+  leftSider: BaseLayoutSiderConfig
+  footer: BaseLayoutFooterConfig
+}
+export type SlotFn = (props?: Record<string, unknown>) => unknown
+export type Slots = {
+  default?: SlotFn
+  header?: SlotFn
+  sider?: SlotFn
+  rightSider?: SlotFn
+  footer?: SlotFn
+  tab?: SlotFn
+}
+export interface Emits {
+  /** Update siderCollapse */
+  (e: 'update:siderCollapse', collapse: boolean): void
+}

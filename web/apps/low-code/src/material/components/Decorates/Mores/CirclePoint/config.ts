@@ -1,5 +1,5 @@
 import { PublicConfigClass } from '@/utils'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 import { CirclePointConfig } from './index'
 import cloneDeep from 'lodash/cloneDeep'
 import { chartInitConfig } from '@/constants'
@@ -12,7 +12,7 @@ export const option = {
   outCircleWidth: 2
 }
 
-export default class Config extends PublicConfigClass implements CreateComponentType {
+export default class Config extends PublicConfigClass implements CreateMaterialType {
   public key = CirclePointConfig.key
   public attr = { ...chartInitConfig, w: 97, h: 97, zIndex: 1 }
   public chartConfig = cloneDeep(CirclePointConfig)

@@ -1,6 +1,6 @@
 import { ref, nextTick, toRaw } from 'vue'
 import { useChartEditStore } from '@/store/modules/chartEditStore/chartEditStore'
-import { CreateComponentType, CreateComponentGroupType } from '@/packages/index.d'
+import { CreateMaterialType, CreateMaterialGroupType } from '@/packages/index.d'
 import { MenuOptionsItemType } from './useContextMenu.hook.d'
 import { MenuEnum } from '@/enums/editPageEnum'
 import cloneDeep from 'lodash/cloneDeep'
@@ -57,7 +57,7 @@ const menuOptions = ref<MenuOptionsItemType[]>([])
 const handleContextMenu = (
   e: MouseEvent,
   // 右键对象
-  targetInstance?: CreateComponentType | CreateComponentGroupType,
+  targetInstance?: CreateMaterialType | CreateMaterialGroupType,
   // 判断函数
   optionsHandle?: Function,
   // 隐藏选项列表

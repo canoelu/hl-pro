@@ -4,12 +4,12 @@
 
 <script setup lang="ts">
 import { ref, PropType, watch } from 'vue'
-import { ConfigType } from '@/typings/design'
+import { MaterialItem } from '@/typings/design'
 import { fetchImages } from '@/material'
 
 const props = defineProps({
   chartConfig: {
-    type: Object as PropType<ConfigType>,
+    type: Object as PropType<MaterialItem>,
     required: true
   }
 })

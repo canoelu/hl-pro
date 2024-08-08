@@ -37,6 +37,7 @@
     "@hl/axios": "workspace:*",
     "@hl/color": "workspace:*",
     "@hl/configuration": "workspace:^",
+    "@hl/core": "workspace:^",
     "@hl/hooks": "workspace:*",
     "@hl/ui": "workspace:*",
     "@hl/utils": "workspace:*",

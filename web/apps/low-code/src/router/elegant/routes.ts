@@ -62,11 +62,150 @@ export const generatedRoutes: GeneratedRoute[] = [
   {
     name: 'design',
     path: '/design',
-    component: 'layout.base$view.design',
+    component: 'layout.base',
     meta: {
       title: 'design',
       i18nKey: 'route.design'
-    }
+    },
+    children: [
+      {
+        name: 'design_modules',
+        path: '/design/modules',
+        meta: {
+          title: 'design_modules',
+          i18nKey: 'route.design_modules'
+        },
+        children: [
+          {
+            name: 'design_modules_design-configs',
+            path: '/design/modules/design-configs',
+            meta: {
+              title: 'design_modules_design-configs',
+              i18nKey: 'route.design_modules_design-configs'
+            },
+            children: [
+              {
+                name: 'design_modules_design-configs_animation-config',
+                path: '/design/modules/design-configs/animation-config',
+                component: 'view.design_modules_design-configs_animation-config',
+                meta: {
+                  title: 'design_modules_design-configs_animation-config',
+                  i18nKey: 'route.design_modules_design-configs_animation-config'
+                }
+              },
+              {
+                name: 'design_modules_design-configs_component-config',
+                path: '/design/modules/design-configs/component-config',
+                component: 'view.design_modules_design-configs_component-config',
+                meta: {
+                  title: 'design_modules_design-configs_component-config',
+                  i18nKey: 'route.design_modules_design-configs_component-config'
+                }
+              },
+              {
+                name: 'design_modules_design-configs_data-source-config',
+                path: '/design/modules/design-configs/data-source-config',
+                component: 'view.design_modules_design-configs_data-source-config',
+                meta: {
+                  title: 'design_modules_design-configs_data-source-config',
+                  i18nKey: 'route.design_modules_design-configs_data-source-config'
+                }
+              },
+              {
+                name: 'design_modules_design-configs_design-page-config',
+                path: '/design/modules/design-configs/design-page-config',
+                component: 'view.design_modules_design-configs_design-page-config',
+                meta: {
+                  title: 'design_modules_design-configs_design-page-config',
+                  i18nKey: 'route.design_modules_design-configs_design-page-config'
+                }
+              },
+              {
+                name: 'design_modules_design-configs_event-config',
+                path: '/design/modules/design-configs/event-config',
+                component: 'view.design_modules_design-configs_event-config',
+                meta: {
+                  title: 'design_modules_design-configs_event-config',
+                  i18nKey: 'route.design_modules_design-configs_event-config'
+                }
+              }
+            ]
+          },
+          {
+            name: 'design_modules_design-datasource',
+            path: '/design/modules/design-datasource',
+            component: 'view.design_modules_design-datasource',
+            meta: {
+              title: 'design_modules_design-datasource',
+              i18nKey: 'route.design_modules_design-datasource'
+            }
+          },
+          {
+            name: 'design_modules_design-edit',
+            path: '/design/modules/design-edit',
+            component: 'view.design_modules_design-edit',
+            meta: {
+              title: 'design_modules_design-edit',
+              i18nKey: 'route.design_modules_design-edit'
+            }
+          },
+          {
+            name: 'design_modules_design-filter',
+            path: '/design/modules/design-filter',
+            component: 'view.design_modules_design-filter',
+            meta: {
+              title: 'design_modules_design-filter',
+              i18nKey: 'route.design_modules_design-filter'
+            }
+          },
+          {
+            name: 'design_modules_design-header',
+            path: '/design/modules/design-header',
+            component: 'view.design_modules_design-header',
+            meta: {
+              title: 'design_modules_design-header',
+              i18nKey: 'route.design_modules_design-header'
+            }
+          },
+          {
+            name: 'design_modules_design-history',
+            path: '/design/modules/design-history',
+            component: 'view.design_modules_design-history',
+            meta: {
+              title: 'design_modules_design-history',
+              i18nKey: 'route.design_modules_design-history'
+            }
+          },
+          {
+            name: 'design_modules_design-layout',
+            path: '/design/modules/design-layout',
+            component: 'view.design_modules_design-layout',
+            meta: {
+              title: 'design_modules_design-layout',
+              i18nKey: 'route.design_modules_design-layout'
+            }
+          },
+          {
+            name: 'design_modules_design-material',
+            path: '/design/modules/design-material',
+            component: 'view.design_modules_design-material',
+            meta: {
+              title: 'design_modules_design-material',
+              i18nKey: 'route.design_modules_design-material'
+            }
+          },
+          {
+            name: 'design_modules_design-menu',
+            path: '/design/modules/design-menu',
+            component: 'view.design_modules_design-menu',
+            meta: {
+              title: 'design_modules_design-menu',
+              i18nKey: 'route.design_modules_design-menu'
+            }
+          }
+        ]
+      }
+    ]
   },
   {
     name: 'home',

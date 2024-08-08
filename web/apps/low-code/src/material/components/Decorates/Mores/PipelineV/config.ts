@@ -1,5 +1,5 @@
 import { PublicConfigClass } from '@/utils'
-import { CreateComponentType } from '@/typings/design'
+import { CreateMaterialType } from '@/typings/design'
 import { chartInitConfig } from '@/constants'
 import { PipelineVConfig } from './index'
 import cloneDeep from 'lodash/cloneDeep'
@@ -11,7 +11,7 @@ export const option = {
   line_class: 'svg_ani_flow'
 }
 
-export default class Config extends PublicConfigClass implements CreateComponentType {
+export default class Config extends PublicConfigClass implements CreateMaterialType {
   public key = PipelineVConfig.key
   public attr = { ...chartInitConfig, w: 15, h: 500, zIndex: -1 }
   public chartConfig = cloneDeep(PipelineVConfig)

@@ -1,5 +1,5 @@
-import { ComponentFrameEnum, PackagesCategoryEnum } from '@/enums'
-import { ImageConfig } from '@/material/components/infomations/Mores/Image/index'
+import { ComponentFrameEnum, MaterialPackageEnum } from '@/enums'
+import { ImageConfig } from '@/material/components/informations/Mores/Image/index'
 import { ChatCategoryEnum, ChatCategoryEnumName } from '../index.d'
 
 // 远程共享库（调接口获取图像列表）
@@ -12,7 +12,7 @@ const photoConfigList = imageList.map((i) => ({
   ...ImageConfig,
   category: ChatCategoryEnum.SHARE,
   categoryName: ChatCategoryEnumName.SHARE,
-  package: PackagesCategoryEnum.PHOTOS,
+  package: MaterialPackageEnum.PHOTOS,
   chartFrame: ComponentFrameEnum.STATIC,
   image: i.imageUrl,
   dataset: i.imageUrl,

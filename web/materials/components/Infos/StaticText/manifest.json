@@ -1,0 +1,12 @@
+{
+  "name": "StaticText",
+  "title": "静态文本",
+  "category": "TEXT",
+  "categoryTitle": "文字",
+  "package": "Infos",
+  "packageTitle": "信息",
+  "size": {
+    "width": 150,
+    "height": 20
+  }
+}
