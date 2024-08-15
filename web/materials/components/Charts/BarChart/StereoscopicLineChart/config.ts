@@ -1,8 +1,8 @@
-import type { MetaContainerItem } from '@open-data-v/base'
-import { ComponentGroup, CustomComponent, DataMode, FormType } from '@open-data-v/base'
+import type { MetaContainerItem } from '@hl/core'
+import { ComponentGroup, Material, DataMode, FormTypeEnum } from '@hl/core'
 
 export const componentName = 'StereoscopicBarChart'
-class StereoscopicBarChartComponent extends CustomComponent {
+class StereoscopicBarChartComponent extends Material {
   constructor(id?: string, name?: string, icon?: string) {
     super({
       component: componentName,
@@ -16,7 +16,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
     })
   }
 
-  _prop: MetaContainerItem[] = [
+  _formProp: MetaContainerItem[] = [
     {
       label: '数据配置',
       prop: 'data',
@@ -24,7 +24,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'upperLimit',
           label: '上限',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 150
           }
@@ -32,7 +32,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'lowerLimit',
           label: '下限',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 0
           }
@@ -40,7 +40,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'max',
           label: '最大值',
-          type: FormType.TEXT,
+          type: FormTypeEnum.TEXT,
           props: {
             defaultValue: 'dataMax'
           }
@@ -48,7 +48,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'min',
           label: '最小值',
-          type: FormType.TEXT,
+          type: FormTypeEnum.TEXT,
           props: {
             defaultValue: '0'
           }
@@ -56,7 +56,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'maxOffset',
           label: '最大偏移值',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 0
           }
@@ -64,7 +64,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'minOffset',
           label: '最小偏移值',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 0
           }
@@ -78,7 +78,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'axisLabelColor',
           label: '柱体颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#3DE7C9'
           }
@@ -92,7 +92,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'axisColor',
           label: '轴线颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#00BAFF'
           }
@@ -100,7 +100,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'axisLabelColor',
           label: '轴线文字颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#00BAFF'
           }
@@ -109,7 +109,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'xshow',
           label: 'X网格线是否显示',
-          type: FormType.SWITCH,
+          type: FormTypeEnum.SWITCH,
           props: {
             defaultValue: true
           }
@@ -117,7 +117,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'yshow',
           label: 'Y网格线是否显示',
-          type: FormType.SWITCH,
+          type: FormTypeEnum.SWITCH,
           props: {
             defaultValue: true
           }
@@ -125,7 +125,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'xLineType',
           label: 'X轴网格线样式',
-          type: FormType.SELECT,
+          type: FormTypeEnum.SELECT,
           props: {
             defaultValue: 'dotted',
             options: [
@@ -138,7 +138,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'yLineType',
           label: 'Y轴网格线样式',
-          type: FormType.SELECT,
+          type: FormTypeEnum.SELECT,
           props: {
             defaultValue: 'dotted',
             options: [
@@ -151,7 +151,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'xAxisLineColor',
           label: 'x轴网格线颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#3391E4'
           }
@@ -159,7 +159,7 @@ class StereoscopicBarChartComponent extends CustomComponent {
         {
           prop: 'yAxisLineColor',
           label: 'y轴网格线颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#3391E4'
           }

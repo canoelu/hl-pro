@@ -53,7 +53,7 @@ export const PixelEnum = [
   { label: 'NestMax', value: '1028X800' }
 ]
 
-export enum FormType {
+export enum FormTypeEnum {
   // 文本框
   TEXT = 'Text',
   // 文本域，多行文本属性
@@ -84,4 +84,12 @@ export enum FormType {
   DATE = 'DatePicker',
   MODAL = 'Modal',
   TRANSFER = 'Transfer'
+}
+
+export enum ContainerTypeEnum {
+  FORM = 'Form',
+  COLLAPSE = 'Collapse',
+  CARD = 'Card',
+  TIMELINE = 'Timeline',
+  TAB = 'TAB'
 }

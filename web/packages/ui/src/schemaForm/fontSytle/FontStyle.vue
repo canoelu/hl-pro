@@ -1,5 +1,5 @@
 <template>
-  <o-select
+  <n-select
     v-model:value="font"
     clearable
     placeholder="请选择字体"
@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import { OSelect } from '@open-data-v/ui'
+import { NSelect } from 'naive-ui'
 import { reactive, ref } from 'vue'
 
 import { SYS_FONTS } from './enum'

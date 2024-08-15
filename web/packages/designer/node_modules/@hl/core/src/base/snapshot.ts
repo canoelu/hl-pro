@@ -4,7 +4,7 @@ import { IStoreCanvasData, ISnapData, SnapMessageEnum, IRecord } from '../../typ
 /**
  * 系统快照
  */
-class Snapshot {
+export class Snapshot {
   public state = reactive<ISnapData>({
     latest: undefined,
     _maxSize: 10,

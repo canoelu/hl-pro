@@ -1,2 +1,2 @@
-class GlobalPage {}
+export class GlobalPage {}
 export default GlobalPage

@@ -1,5 +1,5 @@
 import type { MetaContainerItem } from '@open-data-v/base'
-import { ComponentGroup, CustomComponent, DataMode, FormType } from '@open-data-v/base'
+import { ComponentGroup, CustomComponent, DataMode, FormTypeEnum } from '@open-data-v/base'
 import { h } from 'vue'
 
 export const componentName = 'BasicPieChart'
@@ -17,7 +17,7 @@ class BasicPieChartComponent extends CustomComponent {
     })
   }
 
-  _prop: MetaContainerItem[] = [
+  _formProp: MetaContainerItem[] = [
     {
       label: '数据配置',
       prop: 'data',
@@ -25,7 +25,7 @@ class BasicPieChartComponent extends CustomComponent {
         {
           prop: 'upperLimit',
           label: '上限',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 150
           }
@@ -33,7 +33,7 @@ class BasicPieChartComponent extends CustomComponent {
         {
           prop: 'lowerLimit',
           label: '下限',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 0
           }
@@ -47,7 +47,7 @@ class BasicPieChartComponent extends CustomComponent {
         {
           prop: 'isShow',
           label: '是否显示',
-          type: FormType.SWITCH,
+          type: FormTypeEnum.SWITCH,
           props: {
             defaultValue: true
           }
@@ -61,7 +61,7 @@ class BasicPieChartComponent extends CustomComponent {
         {
           prop: 'isShow',
           label: '是否显示',
-          type: FormType.SWITCH,
+          type: FormTypeEnum.SWITCH,
           props: {
             defaultValue: true
           }
@@ -69,7 +69,7 @@ class BasicPieChartComponent extends CustomComponent {
         {
           prop: 'labelColor',
           label: '文字颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#00BAFF'
           }
@@ -78,7 +78,7 @@ class BasicPieChartComponent extends CustomComponent {
         {
           prop: 'labelSize',
           label: '文字大小',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 40
           }
@@ -86,7 +86,7 @@ class BasicPieChartComponent extends CustomComponent {
         {
           prop: 'labelWeight',
           label: '文字宽度',
-          type: FormType.FONT_WEIGHT,
+          type: FormTypeEnum.FONT_WEIGHT,
           props: {
             defaultValue: 400
           }
@@ -100,7 +100,7 @@ class BasicPieChartComponent extends CustomComponent {
         {
           prop: 'radiusMin',
           label: '半径下限',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 40,
             suffix: () => h('span', {}, '%')
@@ -109,7 +109,7 @@ class BasicPieChartComponent extends CustomComponent {
         {
           prop: 'radiusMax',
           label: '半径上限',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 70,
             suffix: () => h('span', {}, '%')
@@ -119,7 +119,7 @@ class BasicPieChartComponent extends CustomComponent {
         {
           prop: 'borderRadius',
           label: '边框半径',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 10
           }

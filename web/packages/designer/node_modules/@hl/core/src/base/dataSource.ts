@@ -1,6 +1,6 @@
 import { reactive } from 'vue'
 
-class DataSource {
+export class DataSource {
   public state = reactive({})
 }
 export default DataSource

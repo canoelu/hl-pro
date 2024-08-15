@@ -1,2 +1,2 @@
-class GlobalFilter {}
+export class GlobalFilter {}
 export default GlobalFilter

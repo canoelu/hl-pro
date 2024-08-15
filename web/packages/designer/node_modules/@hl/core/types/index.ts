@@ -1,4 +1,4 @@
-import { ContainerType, DataMode } from '../src/enums'
+import { ContainerType, DataMode, FormTypeEnum } from '../src/enums'
 import type {
   ButtonProps,
   CollapseProps,
@@ -7,11 +7,15 @@ import type {
   InputProps,
   RadioProps,
   SelectProps,
-  TabsProps
+  TabsProps,
+  SwitchProps,
+  ModalProps
 } from 'naive-ui'
 import Material from '../src/base/material'
 import { ConcreteComponent } from 'vue'
-
+import { ICanvasState, ICanvasStyleData, IStoreCanvasData } from './canvas'
+export * from './snap'
+export * from './canvas'
 export interface IWorkspace {}
 export type SimulatorNameType = 'desktop' | 'phone'
 export type DesignerViewType = 'design' | 'code' | 'dual'
@@ -31,7 +35,6 @@ export interface IRequestOptions<T = any> {
   type: string
 }
 
-export type IMaterialStyle = Record<string, string | number | boolean>
 export type IMaterialProps = Record<string, any>
 export interface IMaterialData {
   type: string
@@ -72,33 +75,12 @@ export interface IMaterialConfig extends Pick<IMaterial, 'component' | 'name' | 
   dataMode?: DataMode
 }
 declare type Optional<T> = T | undefined
-/**
- * 画布样式
- */
-export interface ICanvasStyleData {
-  width: number
-  height: number
-  background: any
-  extraAttrs?: any
+
+interface ICustomContainerProps {
+  componentType: string | ConcreteComponent
+  args: any
 }
-export interface ICanvasStyleConfig {}
-export interface CanvasStyleConfig {
-  formItems?: Array<IMetaContainerItem>
-  mode?: string
-}
-export interface ICanvasState {
-  name: string
-  scale: number
-  activeIndex?: number
-  activeComponent?: Optional<Material>
-  materialsObj: Record<string, Material>
-  materials: Material[]
-  canvasStyleData: ICanvasStyleData
-  canvasStyleConfig: ICanvasStyleConfig
-  ids: Set<string>
-}
-export interface ICanvasOpt {}
-export type ContainerItemProps = CollapseProps | TabsProps | FormProps
+export type IContainerItemProps = CollapseProps | TabsProps | FormProps | ICustomContainerProps
 export interface BaseFormProps {
   editable?: boolean
   disabled?: boolean
@@ -106,21 +88,46 @@ export interface BaseFormProps {
   defaultValue: string | number | boolean | any
   placeholder?: string
 }
-export type FormItemProps = SelectProps | InputProps | ButtonProps | RadioProps | InputNumberProps
+
+export interface IArrayProps extends BaseFormProps {
+  count: number
+  type: 'static' | 'dynamic'
+  maxItem?: number
+  minItem?: number
+}
+
+export interface ICustomProps extends BaseFormProps {
+  componentType: string | ConcreteComponent
+  args: any
+}
+export type IFormItemProps =
+  | InputProps
+  | InputNumberProps
+  | ICustomProps
+  | IArrayProps
+  | BaseFormProps
+  | SwitchProps
+  | SelectProps
+  | RadioProps
+  | ModalProps
+  | ButtonProps
 export interface IMetaForm {
   label: string
   prop: string
-  type?: string
+  type?: FormTypeEnum
   component?: string | ConcreteComponent
   showLabel?: boolean
   /**
    * @deprecated componentOptions即将弃用，建议使用props
    */
-  componentOptions?: FormItemProps
-  props?: FormItemProps
+  componentOptions?: IFormItemProps
+  props?: IFormItemProps
   children?: IMetaForm[]
 }
 
+/**
+ * 配置
+ */
 export interface IMetaContainerItem {
   label: string
   prop: string
@@ -130,30 +137,34 @@ export interface IMetaContainerItem {
   /**
    * @deprecated componentOptions即将弃用，建议使用props
    */
-  componentOptions?: ContainerItemProps
-  props?: ContainerItemProps
+  componentOptions?: IContainerItemProps
+  props?: IContainerItemProps
   children: IMetaForm[]
 }
 export interface IMaterialMeta extends IMaterial {
+  name: string
+  title: string
+  category: string
+  icon?: string
+  size: {
+    width: number
+    height: number
+  }
+  dataMode?: string
+  clazz?: { new (id?: string, name?: string, icon?: string): Material }
+  remoteClazz?: () => Promise<{
+    default: { new (id?: string, name?: string, icon?: string): Material }
+  }>
   panel?: () => Promise<{
-    size: {
-      width: number
-      height: number
-    }
-    clazz?: { new (id?: string, name?: string, icon?: string): Material }
-    remoteClazz?: () => Promise<{
-      default: { new (id?: string, name?: string, icon?: string): Material }
-    }>
     default: {
       propValue: () => IMetaContainerItem[]
       style: () => IMetaContainerItem[]
       demoLoader: () => any
     }
-    dataMode?: string
-    propValueConfig?: () => IMetaContainerItem[]
-    styleConfig?: () => IMetaContainerItem[]
-    demoLoader?: () => any
   }>
+  propValueConfig?: () => IMetaContainerItem[]
+  styleConfig?: () => IMetaContainerItem[]
+  demoLoader?: () => any
 }
 /**
  * 页面属性
@@ -228,36 +239,14 @@ export interface IClipBoardState {
   isCut: boolean
 }
 
-// Canvas所有的数据
-export interface ICanvasAllData {
-  canvasStyle: ICanvasStyleData
-  canvasData: Record<string, any>[]
-  dataSlotters: Array<{ type: string; config: any }>
+export interface IDOMRectStyle {
+  width: number
+  height: number
+  left: number
+  top: number
+  rotate: number
 }
-// CANVAS存储数据
-export interface IStoreCanvasData extends ICanvasAllData {
-  id?: number
-}
-/*******----------快照----------**** */
-export enum SnapMessageEnum {
-  InitView = 'initView', // 初始化页面
-  UpdateCanvas = 'UpdateCanvas', // 修改画布
-  DropNode = 'dropNode',
-  RemoveNode = 'RemoveNode', // 删除节点
-  ReplaceNode = 'ReplaceNode',
-  CloneNode = 'CloneNode',
-  InsertNode = 'insertNode',
-  UpdateAttribute = 'updateAttribute' // 更新属性
-}
-export interface IRecord {
-  time: string | number
-  message: SnapMessageEnum
-  data: IStoreCanvasData
-}
-export interface ISnapData {
-  _maxSize: number
-  _index: number
-  // 最新快照
-  latest?: IRecord
-  _records: IRecord[]
+
+export interface IMaterialStyle extends IDOMRectStyle {
+  [propName: string]: string | number | boolean
 }

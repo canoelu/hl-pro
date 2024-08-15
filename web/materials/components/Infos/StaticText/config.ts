@@ -1,5 +1,5 @@
 import type { MetaContainerItem } from '@open-data-v/base'
-import { ComponentGroup, CustomComponent, FormType } from '@open-data-v/base'
+import { ComponentGroup, CustomComponent, FormTypeEnum } from '@open-data-v/base'
 import { h } from 'vue'
 
 export const componentName = 'StaticText'
@@ -16,7 +16,7 @@ class StaticTextComponent extends CustomComponent {
     })
   }
 
-  _prop: MetaContainerItem[] = [
+  _formProp: MetaContainerItem[] = [
     {
       label: '基础配置',
       prop: 'base',
@@ -24,7 +24,7 @@ class StaticTextComponent extends CustomComponent {
         {
           prop: 'type',
           label: '文本类型',
-          type: FormType.SELECT,
+          type: FormTypeEnum.SELECT,
           props: {
             defaultValue: 'text',
             options: [
@@ -36,7 +36,7 @@ class StaticTextComponent extends CustomComponent {
         {
           prop: 'text',
           label: '自定义文本',
-          type: FormType.TEXT,
+          type: FormTypeEnum.TEXT,
           props: {
             defaultValue: 'OpenDataV'
           }
@@ -52,7 +52,7 @@ class StaticTextComponent extends CustomComponent {
         {
           prop: 'color',
           label: '颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#1E90FF'
           }
@@ -60,7 +60,7 @@ class StaticTextComponent extends CustomComponent {
         {
           prop: 'fontSize',
           label: '字体大小',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 20,
             suffix: () => h('span', {}, 'px')
@@ -69,7 +69,7 @@ class StaticTextComponent extends CustomComponent {
         {
           prop: 'fontWeight',
           label: '字体宽度',
-          type: FormType.FONT_WEIGHT,
+          type: FormTypeEnum.FONT_WEIGHT,
           props: {
             defaultValue: 200
           }
@@ -77,7 +77,7 @@ class StaticTextComponent extends CustomComponent {
         {
           prop: 'fontFamily',
           label: '字体',
-          type: FormType.FONT_STYLE,
+          type: FormTypeEnum.FONT_STYLE,
           props: {
             defaultValue: 'Arial'
           }

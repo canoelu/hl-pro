@@ -1,5 +1,5 @@
 import type { IMetaContainerItem, IMetaForm } from '@hl/core'
-import { ContainerType } from '@open-data-v/base'
+import { ContainerType } from '@hl/core'
 import { NCard, NCollapse, NCollapseItem, NFormItem, NDivider } from 'naive-ui'
 import type { PropType } from 'vue'
 import { defineComponent, ref, watch } from 'vue'
@@ -66,7 +66,41 @@ export default defineComponent({
                 <> {'未获取到正确的数据'}</>
             )
         }
+
         const renderContainer = (containerItems: Array<IMetaContainerItem>) => {
+            const containerMap = new Map([[ContainerType.COLLAPSE, <NCollapse accordion={true}>
+                {containerItems.map((el) => {
+                    return (
+                        <NCollapseItem key={el.prop} title={el.label} name={el.prop}>
+                            {renderForm(el)}
+                        </NCollapseItem>
+                    )
+                })}
+            </NCollapse>], [ContainerType.CARD, <>
+                {containerItems.map((el) => {
+                    return (
+                        <NCard title={el.label} class="mb-1">
+                            {renderForm(el)}
+                        </NCard>
+                    )
+                })}
+            </>], [ContainerType.FORM, <div class="p-2">
+                {containerItems.map((el) => {
+                    return (
+                        <>
+                            <NDivider
+                                title-placement="left"
+                                style={{ marginTop: '0px', marginBottom: '0px' }}
+                            >
+                                {el.label}
+                            </NDivider>
+                            {renderForm(el)}
+                        </>
+                    )
+                })}
+            </div>]])
+            const ContainerItem = containerMap.get(props.mode)
+            return ContainerItem
             switch (props.mode) {
                 case ContainerType.COLLAPSE:
                     return (

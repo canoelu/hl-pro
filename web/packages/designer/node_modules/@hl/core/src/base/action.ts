@@ -1,6 +1,5 @@
-
 import { reactive } from 'vue'
-class Action {
+export class Action {
   public state = reactive({})
 }
 export default Action

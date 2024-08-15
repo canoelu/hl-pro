@@ -1,5 +1,5 @@
 import { ICanvasStyleData, IMetaContainerItem } from '../../types'
-import { FormType, PixelEnum } from '../enums'
+import { FormTypeEnum, PixelEnum } from '../enums'
 export const BASE_CANVAS_STYLE_DATA: ICanvasStyleData = {
   width: window.screen.width,
   height: window.screen.height,
@@ -16,7 +16,7 @@ export const BASE_CANVAS_STYLE_CONFIG: Array<IMetaContainerItem> = [
       {
         prop: 'pixel',
         label: '分辨率',
-        type: FormType.SELECT,
+        type: FormTypeEnum.SELECT,
         props: {
           options: pixels,
           defaultValue: `${window.screen.width}X${window.screen.height}`
@@ -25,7 +25,7 @@ export const BASE_CANVAS_STYLE_CONFIG: Array<IMetaContainerItem> = [
       {
         prop: 'width',
         label: '宽度',
-        type: FormType.NUMBER,
+        type: FormTypeEnum.NUMBER,
         props: {
           defaultValue: window.screen.width
         }
@@ -33,7 +33,7 @@ export const BASE_CANVAS_STYLE_CONFIG: Array<IMetaContainerItem> = [
       {
         prop: 'height',
         label: '高度',
-        type: FormType.NUMBER,
+        type: FormTypeEnum.NUMBER,
         props: {
           defaultValue: window.screen.height
         }
@@ -41,7 +41,7 @@ export const BASE_CANVAS_STYLE_CONFIG: Array<IMetaContainerItem> = [
       {
         prop: 'background',
         label: '背景',
-        type: FormType.BACKGROUND,
+        type: FormTypeEnum.BACKGROUND,
         props: {
           defaultValue: { backgroundColor: '#272e3b' }
         }

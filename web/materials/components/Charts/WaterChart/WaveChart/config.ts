@@ -1,5 +1,5 @@
 import type { MetaContainerItem } from '@open-data-v/base'
-import { ComponentGroup, CustomComponent, DataMode, FormType } from '@open-data-v/base'
+import { ComponentGroup, CustomComponent, DataMode, FormTypeEnum } from '@open-data-v/base'
 
 export const componentName = 'WaveChart'
 class WaveChartComponent extends CustomComponent {
@@ -16,7 +16,7 @@ class WaveChartComponent extends CustomComponent {
     })
   }
 
-  _prop: MetaContainerItem[] = [
+  _formProp: MetaContainerItem[] = [
     {
       label: '图表配置',
       prop: 'options',
@@ -24,7 +24,7 @@ class WaveChartComponent extends CustomComponent {
         {
           prop: 'amplitude',
           label: '波动幅度',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 20
           }
@@ -32,7 +32,7 @@ class WaveChartComponent extends CustomComponent {
         {
           prop: 'outlineShow',
           label: '显示边框',
-          type: FormType.SWITCH,
+          type: FormTypeEnum.SWITCH,
           props: {
             defaultValue: false
           }
@@ -40,7 +40,7 @@ class WaveChartComponent extends CustomComponent {
         {
           prop: 'outlineColor',
           label: '边框颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#3491FA'
           }
@@ -48,7 +48,7 @@ class WaveChartComponent extends CustomComponent {
         {
           prop: 'radius',
           label: '图形占比',
-          type: FormType.TEXT,
+          type: FormTypeEnum.TEXT,
           props: {
             defaultValue: '100%'
           }
@@ -56,7 +56,7 @@ class WaveChartComponent extends CustomComponent {
         {
           prop: 'shape',
           label: '形状',
-          type: FormType.SELECT,
+          type: FormTypeEnum.SELECT,
           props: {
             defaultValue: 'circle',
             options: [
@@ -74,7 +74,7 @@ class WaveChartComponent extends CustomComponent {
         {
           prop: 'direction',
           label: '波动方向',
-          type: FormType.SELECT,
+          type: FormTypeEnum.SELECT,
           props: {
             defaultValue: 'left',
             options: [
@@ -86,7 +86,7 @@ class WaveChartComponent extends CustomComponent {
         {
           prop: 'waveAnimation',
           label: '是否波动',
-          type: FormType.SWITCH,
+          type: FormTypeEnum.SWITCH,
           props: {
             defaultValue: true
           }
@@ -94,7 +94,7 @@ class WaveChartComponent extends CustomComponent {
         {
           prop: 'color',
           label: '水波颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#3491FA'
           }
@@ -102,7 +102,7 @@ class WaveChartComponent extends CustomComponent {
         {
           prop: 'labelShow',
           label: '是否显示文本',
-          type: FormType.SWITCH,
+          type: FormTypeEnum.SWITCH,
           props: {
             defaultValue: true
           }
@@ -110,7 +110,7 @@ class WaveChartComponent extends CustomComponent {
         {
           prop: 'backgroundColor',
           label: '背景色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#FFFFFF'
           }

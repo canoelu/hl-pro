@@ -1,5 +1,5 @@
 import type { MetaContainerItem } from '@open-data-v/base'
-import { ComponentGroup, CustomComponent, DataMode, FormType } from '@open-data-v/base'
+import { ComponentGroup, CustomComponent, DataMode, FormTypeEnum } from '@open-data-v/base'
 
 export const componentName = 'BasicLineChart'
 class BasicLineChartComponent extends CustomComponent {
@@ -16,7 +16,7 @@ class BasicLineChartComponent extends CustomComponent {
     })
   }
 
-  _prop: MetaContainerItem[] = [
+  _formProp: MetaContainerItem[] = [
     {
       label: '数据配置',
       prop: 'data',
@@ -24,7 +24,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'upperLimit',
           label: '上限',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 150
           }
@@ -32,7 +32,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'lowerLimit',
           label: '下限',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 0
           }
@@ -46,7 +46,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'axisLabelColor',
           label: 'label颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#3DE7C9'
           }
@@ -54,7 +54,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'axisColor',
           label: '颜色1',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#3DE7C9'
           }
@@ -68,7 +68,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'axisColor',
           label: '轴线颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#00BAFF'
           }
@@ -76,7 +76,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'axisLabelColor',
           label: '轴线文字颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#00BAFF'
           }
@@ -85,7 +85,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'xshow',
           label: 'X网格线是否显示',
-          type: FormType.SWITCH,
+          type: FormTypeEnum.SWITCH,
           props: {
             defaultValue: true
           }
@@ -93,7 +93,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'yshow',
           label: 'Y网格线是否显示',
-          type: FormType.SWITCH,
+          type: FormTypeEnum.SWITCH,
           props: {
             defaultValue: true
           }
@@ -101,7 +101,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'xLineType',
           label: 'X轴网格线样式',
-          type: FormType.SELECT,
+          type: FormTypeEnum.SELECT,
           props: {
             defaultValue: 'dotted',
             options: [
@@ -114,7 +114,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'yLineType',
           label: 'Y轴网格线样式',
-          type: FormType.SELECT,
+          type: FormTypeEnum.SELECT,
           props: {
             defaultValue: 'dotted',
             options: [
@@ -127,7 +127,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'xAxisLineColor',
           label: 'x轴网格线颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#3391E4'
           }
@@ -135,7 +135,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'yAxisLineColor',
           label: 'y轴网格线颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#3391E4'
           }
@@ -149,7 +149,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'lineArea',
           label: '显示区域色',
-          type: FormType.SWITCH,
+          type: FormTypeEnum.SWITCH,
           props: {
             defaultValue: true
           }
@@ -157,7 +157,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'lineWidth',
           label: '折线宽度',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 1
           }
@@ -165,7 +165,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'lineColor',
           label: '折线颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#3DE7C9'
           }
@@ -173,7 +173,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'lineLinearStart',
           label: '渐变起始色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: '#3491FA'
           }
@@ -181,7 +181,7 @@ class BasicLineChartComponent extends CustomComponent {
         {
           prop: 'lineLinearEnd',
           label: '渐变结束色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: 'transparent'
           }

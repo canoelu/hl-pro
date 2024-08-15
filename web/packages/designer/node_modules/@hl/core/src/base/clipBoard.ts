@@ -4,7 +4,7 @@ import { copyInfo } from '@hl/utils'
 import Material from './material'
 import { IClipBoardState, IPaste } from '../../types'
 
-class ClipBoard {
+export class ClipBoard {
   public state = reactive<IClipBoardState>({
     copyData: undefined,
     isCut: false

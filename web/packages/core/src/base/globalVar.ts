@@ -1,2 +1,2 @@
-class GlobalVar {}
+export class GlobalVar {}
 export default GlobalVar

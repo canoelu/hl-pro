@@ -1,5 +1,5 @@
 import type { MetaContainerItem } from '@open-data-v/base'
-import { ComponentGroup, CustomComponent, FormType } from '@open-data-v/base'
+import { ComponentGroup, CustomComponent, FormTypeEnum } from '@open-data-v/base'
 import { h } from 'vue'
 
 export const componentName = 'DateText'
@@ -15,7 +15,7 @@ class DateTextComponent extends CustomComponent {
     })
   }
 
-  _prop: MetaContainerItem[] = [
+  _formProp: MetaContainerItem[] = [
     {
       label: '基础配置',
       prop: 'base',
@@ -23,7 +23,7 @@ class DateTextComponent extends CustomComponent {
         {
           prop: 'format',
           label: '格式',
-          type: FormType.TEXT,
+          type: FormTypeEnum.TEXT,
           props: {
             defaultValue: 'YYYY-MM-DD HH:mm:ss'
           }
@@ -39,7 +39,7 @@ class DateTextComponent extends CustomComponent {
         {
           prop: 'color',
           label: '颜色',
-          type: FormType.COLOR,
+          type: FormTypeEnum.COLOR,
           props: {
             defaultValue: 'skyblue'
           }
@@ -47,7 +47,7 @@ class DateTextComponent extends CustomComponent {
         {
           prop: 'fontSize',
           label: '字体大小',
-          type: FormType.NUMBER,
+          type: FormTypeEnum.NUMBER,
           props: {
             defaultValue: 20,
             suffix: () => h('span', {}, 'px')
@@ -56,7 +56,7 @@ class DateTextComponent extends CustomComponent {
         {
           prop: 'fontWeight',
           label: '字体宽度',
-          type: FormType.FONT_WEIGHT,
+          type: FormTypeEnum.FONT_WEIGHT,
           props: {
             defaultValue: 200
           }
@@ -64,7 +64,7 @@ class DateTextComponent extends CustomComponent {
         {
           prop: 'fontFamily',
           label: '字体',
-          type: FormType.FONT_STYLE,
+          type: FormTypeEnum.FONT_STYLE,
           props: {
             defaultValue: 'Arial'
           }

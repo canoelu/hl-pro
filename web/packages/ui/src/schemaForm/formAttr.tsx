@@ -1,15 +1,9 @@
 import type {
-  CustomProps,
-  FormItemProps,
-  InputNumberProps,
-  InputProps,
-  MetaForm,
-  ModalProps,
-  RadioProps,
-  SelectProps,
-  SwitchProps
-} from '@open-data-v/base'
-import { FormType } from '@open-data-v/base'
+  ICustomProps,
+  IFormItemProps,
+  IMetaForm,
+} from '@hl/core'
+import { FormTypeEnum } from '@hl/core'
 import {
   NButton,
   NCard,
@@ -24,17 +18,25 @@ import {
   NSelect,
   NSwitch
 } from 'naive-ui'
+import type {
+  InputNumberProps,
+  InputProps,
+  ModalProps,
+  RadioProps,
+  SelectProps,
+  SwitchProps
+} from 'naive-ui'
 import { isUndefined } from 'lodash-es'
-import type { PropType } from 'vue'
+import type { Component, PropType } from 'vue'
 import { defineComponent, h, ref, watch } from 'vue'
 
 import ArrayItem from './arrayItem'
 import BackgroundItem from './background'
 import CustomItem from './customItem'
-// import { GlobalColorSwatches } from '../enum'
 import FontStyle from './fontSytle'
 import FontWeight from './fontWeight'
 import LinearGradient from './linearGradient'
+import { GlobalColorSwatches } from './enums'
 
 export default defineComponent({
   components: {
@@ -58,7 +60,7 @@ export default defineComponent({
       required: true
     },
     children: {
-      type: Array as PropType<MetaForm[]>,
+      type: Array as PropType<IMetaForm[]>,
       required: true
     },
     data: {
@@ -69,6 +71,7 @@ export default defineComponent({
   emits: ['change', 'updateData'],
   setup(props, { emit }) {
     const formData = ref<Record<string, any>>(props.data)
+    const componentMap=new Map<FormTypeEnum,Component>([[FormTypeEnum.COLOR,NColorPicker],[FormTypeEnum.SWITCH,NSwitch],[FormTypeEnum.FONT_STYLE,FontStyle],[FormTypeEnum.FONT_WEIGHT,FontWeight],[FormTypeEnum.BACKGROUND,BackgroundItem]])
     watch(
       () => props.data,
       () => {
@@ -81,7 +84,7 @@ export default defineComponent({
     }
     const isShowLabel = (showLabel?: boolean) => showLabel !== false
     const isShow = ref<boolean>(false)
-    const renderModal = (item: MetaForm, modelValue: Record<string, any>, path: Array<string>) => {
+    const renderModal = (item: IMetaForm, modelValue: Record<string, any>, path: Array<string>) => {
       const options = ((item || {}).props || {}) as ModalProps
       return (
         <>
@@ -118,28 +121,12 @@ export default defineComponent({
     }
 
     const renderFormItem = (
-      item: MetaForm,
+      item: IMetaForm,
       modelValue: Record<string, any>,
       path: Array<string> = []
     ) => {
-      let component: {} = NInput
-      switch (item.type) {
-        case FormType.SWITCH:
-          component = NSwitch
-          break
-        case FormType.FONT_STYLE:
-          component = FontStyle
-          break
-        case FormType.FONT_WEIGHT:
-          component = FontWeight
-          break
-        case FormType.LINEAR_GRADIENT:
-          component = LinearGradient
-          break
-        case FormType.BACKGROUND:
-          component = BackgroundItem
-          break
-      }
+      let component =item.type?componentMap.get(item.type) as Component: NInput
+      
       return h(component, {
         value: modelValue[item.prop],
         onUpdateValue: (value) => {
@@ -148,11 +135,11 @@ export default defineComponent({
         }
       })
     }
-    const renderItem = (item: MetaForm, modelValue, path: Array<string> = []) => {
+    const renderItem = (item: IMetaForm, modelValue, path: Array<string> = []) => {
       if (!modelValue) {
         return <> </>
       }
-      const itemOptions = (item.props || item.componentOptions || {}) as FormItemProps
+      const itemOptions = (item.props || item.componentOptions || {}) as IFormItemProps
       const options: Record<string, any>[] =
         (itemOptions as SelectProps | RadioProps | SwitchProps)?.options || []
 
@@ -167,15 +154,15 @@ export default defineComponent({
       }
 
       switch (item.type) {
-        // case FormType.COLOR:
-        //   return (
-        //     <NColorPicker
-        //       v-model:value={modelValue[item.prop]}
-        //       swatches={GlobalColorSwatches}
-        //       onUpdateValue={(event) => changed(event, [...path, item.prop])}
-        //     />
-        //   )
-        case FormType.SELECT:
+        case FormTypeEnum.COLOR:
+          return (
+            <NColorPicker
+              v-model:value={modelValue[item.prop]}
+              swatches={GlobalColorSwatches}
+              on-update:value={(event) => changed(event, [...path, item.prop])}
+            />
+          )
+        case FormTypeEnum.SELECT:
           return (
             <NSelect
               v-model:value={modelValue[item.prop]}
@@ -185,7 +172,7 @@ export default defineComponent({
               clearable={true}
             />
           )
-        case FormType.RADIO:
+        case FormTypeEnum.RADIO:
           return (
             <NRadioGroup
               v-model:value={modelValue[item.prop]}
@@ -198,14 +185,14 @@ export default defineComponent({
               ))}
             </NRadioGroup>
           )
-        case FormType.NUMBER:
+        case FormTypeEnum.NUMBER:
           const numberMax: number = getOptionsValue<number>('max', 9999999999)
           const numberMin: number = getOptionsValue<number>('min', -9999999999)
 
           return (
             <NInputNumber
               v-model:value={modelValue[item.prop]}
-              onChange={(event) => changed(event, [...path, item.prop])}
+              on-update:value={(event) => changed(event, [...path, item.prop])}
               max={numberMax}
               min={numberMin}
               clearable={true}
@@ -215,13 +202,13 @@ export default defineComponent({
               }}
             />
           )
-        case FormType.SWITCH:
-        case FormType.FONT_STYLE:
-        case FormType.FONT_WEIGHT:
-        case FormType.LINEAR_GRADIENT:
-        case FormType.BACKGROUND:
+        case FormTypeEnum.SWITCH:
+        case FormTypeEnum.FONT_STYLE:
+        case FormTypeEnum.FONT_WEIGHT:
+        case FormTypeEnum.LINEAR_GRADIENT:
+        case FormTypeEnum.BACKGROUND:
           return renderFormItem(item, modelValue, [...path, item.prop])
-        case FormType.ARRAY:
+        case FormTypeEnum.ARRAY:
           const count = getOptionsValue<number>('count', 1)
           const type = getOptionsValue<'static' | 'dynamic'>('type', 'static')
           const maxItem = getOptionsValue<number | undefined>('maxItem')
@@ -237,19 +224,19 @@ export default defineComponent({
             maxItem,
             minItem
           })
-        case FormType.MODAL:
+        case FormTypeEnum.MODAL:
           const childModelValue = modelValue[item.prop]
           if (isUndefined(childModelValue)) {
             return <></>
           }
           return renderModal(item, childModelValue, [...path, item.prop])
-        case FormType.CUSTOM:
+        case FormTypeEnum.CUSTOM:
           return (
             <CustomItem
               v-model:value={modelValue[item.prop]}
               onChange={(event) => changed(event, [...path, item.prop])}
-              component={(itemOptions as CustomProps).componentType}
-              args={(itemOptions as CustomProps).args}
+              component={(itemOptions as ICustomProps).componentType}
+              args={(itemOptions as ICustomProps).args}
             />
           )
         default:
