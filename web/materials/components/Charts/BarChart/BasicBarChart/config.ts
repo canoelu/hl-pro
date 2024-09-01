@@ -1,12 +1,12 @@
-import type { MetaContainerItem } from '@hl/core'
-import { ComponentGroup, CustomComponent, DataMode, FormTypeEnum } from '@hl/core'
+import type { IMetaContainerItem } from '@hl/core'
+import { Material, DataMode, FormTypeEnum } from '@hl/core'
 
 export const componentName = 'BasicBarChart'
-class BasicBarChartComponent extends CustomComponent {
+class BasicBarChartComponent extends Material {
   constructor(id?: string, name?: string, icon?: string) {
     super({
       component: componentName,
-      group: ComponentGroup.BAR,
+      // group: ComponentGroup.BAR,
       name: name ? name : '基础柱状图',
       id,
       width: 500,
@@ -16,7 +16,7 @@ class BasicBarChartComponent extends CustomComponent {
     })
   }
 
-  _formProp: MetaContainerItem[] = [
+  _formProp: IMetaContainerItem[] = [
     {
       label: '数据配置',
       prop: 'data',
@@ -215,7 +215,7 @@ class BasicBarChartComponent extends CustomComponent {
       ]
     }
   ]
-  _style: MetaContainerItem[] = []
+  _style: IMetaContainerItem[] = []
   get exampleData(): any {
     return [
       { label: '秦', value: Math.round(Math.random() * 100) },

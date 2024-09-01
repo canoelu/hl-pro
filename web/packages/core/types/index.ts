@@ -14,8 +14,9 @@ import type {
 import Material from '../src/base/material'
 import { ConcreteComponent } from 'vue'
 import { ICanvasState, ICanvasStyleData, IStoreCanvasData } from './canvas'
-export * from './snap'
-export * from './canvas'
+export * from './snap.d'
+export * from './canvas.d'
+export * from './designer.d'
 export interface IWorkspace {}
 export type SimulatorNameType = 'desktop' | 'phone'
 export type DesignerViewType = 'design' | 'code' | 'dual'
@@ -65,6 +66,9 @@ export interface IMaterial {
   props?: IMaterialProps
   data?: IMaterialData
   subMaterials?: IMaterial[]
+  dataMode?: DataMode
+  propValue: IMetaContainerItem
+
   script?: IScriptOption
 }
 export interface IMaterialConfig extends Pick<IMaterial, 'component' | 'name' | 'icon'> {
@@ -150,7 +154,7 @@ export interface IMaterialMeta extends IMaterial {
     width: number
     height: number
   }
-  dataMode?: string
+  dataMode?: DataMode
   clazz?: { new (id?: string, name?: string, icon?: string): Material }
   remoteClazz?: () => Promise<{
     default: { new (id?: string, name?: string, icon?: string): Material }
@@ -188,47 +192,9 @@ export interface IVar {
   default?: string
   description?: string
 }
-/**
- * 全局过滤器
- */
-export interface IFilter {
-  name: string | number
-  description?: string
-  express?: string
-}
+
 export interface IRequestConfig {}
-/**
- * 设计器
- */
-export interface IDesignerState {
-  name: string
-  id: string
-  activeIndex: number
-  simulator?: SimulatorNameType | ISimulatorType
-  activePanel?: string
-  /**
-   * 封面
-   */
-  thumbnail: string
-  materialList: Material[]
-  materials: Record<string, Material>
-  /**
-   * 页面
-   */
-  pageList: IPage[]
-  /**
-   * 全局变量
-   */
-  varList: IVar[]
-  /**
-   * 过滤器
-   */
-  filterList: IFilter[]
-  /**
-   * 全局请求配置
-   */
-  requestConfig?: IRequestConfig
-}
+
 export interface IPaste {
   isMouse: boolean
   x?: number
@@ -249,4 +215,103 @@ export interface IDOMRectStyle {
 
 export interface IMaterialStyle extends IDOMRectStyle {
   [propName: string]: string | number | boolean
+}
+
+/**
+ * TODO
+ *  物料数据
+ */
+
+export type IDataAcceptor = (result: any, id?: string) => void
+
+export interface IDataInstance {
+  toJSON: () => any | undefined
+  connect: (dataAcceptor: IDataAcceptor) => void
+  close: () => void
+  debug: (dataAcceptor: IDataAcceptor) => void
+}
+
+export type IDataHandler = new (options?: Record<string, any>, connector?: any) => IDataHandler
+
+export interface IDataConfig {
+  type: string
+  dataInstance: IDataHandler
+}
+export interface ISlotter {
+  dataConfig: IDataConfig
+  changeDataConfig: (config: IDataConfig) => void
+}
+
+export interface IBaseScript {
+  type: string
+  key: string
+  toJSON: () => IScriptOption | undefined
+  afterCallback?: (data: any, propValue: Record<string, any>) => any
+}
+
+export interface IResponse {
+  status: 'SUCCESS' | 'FAILED'
+  data: any
+  [key: string]: any
+}
+export interface IDataOption {
+  type: string
+  otherConfig?: Record<string, any>
+  requestOptions: IRequestOptions
+}
+
+export interface IGroupStyle {
+  gwidth: number
+  gheight: number
+  gleft: number
+  gtop: number
+  grotate: number
+}
+
+export interface Hooks {
+  useProp: <T>(
+    component: Material,
+    callbackProp?: (prop: string, key: string, value: any) => void,
+    callbackStyle?: (key: string, value: any) => void
+  ) => {
+    propValue: any
+  }
+  useData: (component: Material, callbackProp?: (resp: any, _: string) => void) => void
+}
+
+export type ScriptHandler = { new (key: string, ...args: any): IBaseScript }
+
+export interface IScriptPlugin {
+  type: string
+  name: string
+  component: any
+  handler: ScriptHandler
+}
+
+export interface IVector {
+  x: number
+  y: number
+}
+
+export interface DOMRectStyle {
+  width: number
+  height: number
+  left: number
+  top: number
+  rotate: number
+}
+
+export type IPosition = Omit<DOMRectStyle, 'rotate'>
+
+export interface ILocation {
+  right: number
+  left: number
+  top: number
+  bottom: number
+}
+
+export interface IActionState {
+  style: IPosition
+  materials: Material[]
+  ids: Set<string>
 }

@@ -1,7 +1,10 @@
 export * from './useSnapshot'
+export * from './useDesigner'
 
-export * from './useCanvas'
 export * from './useClipBoard'
 export * from './useDatasource'
 export * from './useAction'
-export * from './useDesigner'
+export * from './useCanvas'
+export * from './useProp'
+export * from './useData'
+export * from './useScript'

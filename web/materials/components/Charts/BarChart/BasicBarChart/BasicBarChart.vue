@@ -3,10 +3,9 @@
 </template>
 
 <script setup lang="ts">
-import type { Hooks } from '@open-data-v/base'
 import type { BarSeriesOption, EChartsOption, XAXisComponentOption } from 'echarts'
 import { inject, onMounted, ref } from 'vue'
-
+import { useProp, useData } from '@hl/core'
 import { useEchart } from '../../hooks'
 import { compareResetValue } from '../../utils'
 import type BasicLineChartComponent from './config'
@@ -17,13 +16,14 @@ let globalOption: EChartsOption
 const props = defineProps<{
   component: BasicLineChartComponent
 }>()
-const { useProp, useData } = inject<Hooks>('HOOKS') || {}
+// const { useProp, useData } = inject<Hooks>('HOOKS') || {}
 
 let chartData: Array<{ label: string; value: number }> = []
 
 const dataChange = (resp: any, _?: string) => {
   if (resp.status === 'SUCCESS') {
     chartData = resp.afterData
+   
     updateData(chartData)
   }
 }
@@ -33,7 +33,7 @@ if (useData) {
 }
 
 let propValue: BasicLineChart
-const propValueChange = (..._formPropValue) => {
+const propValueChange = () => {
   updateData(chartData)
 }
 if (useProp) {
@@ -64,63 +64,63 @@ const getOption = () => {
       type: 'category',
       data: [],
       splitLine: {
-        show: propValue.axis.xshow,
+        show: propValue?.axis?.xshow,
         lineStyle: {
-          type: propValue.axis.xLineType,
-          color: propValue.axis.xAxisLineColor
+          type: propValue?.axis?.xLineType,
+          color: propValue?.axis?.xAxisLineColor
         }
       },
       axisLine: {
         lineStyle: {
-          color: propValue.axis.axisColor || '#fff'
+          color: propValue?.axis?.axisColor || '#fff'
         }
       },
       axisTick: {
         lineStyle: {
-          color: propValue.axis.axisColor || '#fff'
+          color: propValue?.axis?.axisColor || '#fff'
         }
       },
       axisLabel: {
-        color: propValue.axis.axisLabelColor || '#fff'
+        color: propValue?.axis?.axisLabelColor || '#fff'
       }
     },
     yAxis: {
       type: 'value',
-      max: (value) => {
-        if (propValue.data.max === 'dataMax' || !propValue.data.max) {
-          return value.max + Number(propValue.data.maxOffset || 0)
+      max: value => {
+        if (propValue?.data.max === 'dataMax' || !propValue?.data.max) {
+          return value.max + Number(propValue?.data.maxOffset || 0)
         } else {
-          return Number(propValue.data.max) + Number(propValue.data.maxOffset || 0)
+          return Number(propValue?.data.max) + Number(propValue?.data.maxOffset || 0)
         }
       },
-      min: (value) => {
-        if (propValue.data.min === 'dataMin') {
-          return value.min - Number(propValue.data.minOffset || 0)
-        } else if (['', undefined, null].includes(propValue.data.min)) {
-          return 0 - Number(propValue.data.minOffset || 0)
+      min: value => {
+        if (propValue?.data.min === 'dataMin') {
+          return value.min - Number(propValue?.data.minOffset || 0)
+        } else if (['', undefined, null].includes(propValue?.data.min)) {
+          return 0 - Number(propValue?.data.minOffset || 0)
         } else {
-          return Number(propValue.data.min) - Number(propValue.data.minOffset || 0)
+          return Number(propValue?.data.min) - Number(propValue?.data.minOffset || 0)
         }
       },
       splitLine: {
-        show: propValue.axis.yshow,
+        show: propValue?.axis.yshow,
         lineStyle: {
-          type: propValue.axis.yLineType,
-          color: propValue.axis.yAxisLineColor
+          type: propValue?.axis?.yLineType,
+          color: propValue?.axis?.yAxisLineColor
         }
       },
       axisLine: {
         lineStyle: {
-          color: propValue.axis.axisColor || '#fff'
+          color: propValue?.axis?.axisColor || '#fff'
         }
       },
       axisTick: {
         lineStyle: {
-          color: propValue.axis.axisColor || '#fff'
+          color: propValue?.axis?.axisColor || '#fff'
         }
       },
       axisLabel: {
-        color: propValue.axis.axisLabelColor || '#fff'
+        color: propValue?.axis?.axisLabelColor || '#fff'
       }
     },
     series: []
@@ -136,19 +136,19 @@ const getOption = () => {
 }
 
 const updateData = (resp: Array<{ label: string; value: number }>) => {
-  const upperLimit = propValue.data.upperLimit
-  const lowerLimit = propValue.data.lowerLimit
-  const data = (resp || []).map((ele) => {
+  const upperLimit = propValue?.data?.upperLimit
+  const lowerLimit = propValue?.data?.lowerLimit
+  const data = (resp || [])?.map(ele => {
     return {
       value: compareResetValue(Number(ele.value), upperLimit, lowerLimit),
       label: ele.label
     }
   })
   globalOption = getOption()
-  globalOption.series![0].data = data.map((el) => el.value)
+  globalOption.series![0].data = data.map(el => el.value)
   globalOption.xAxis = {
     ...globalOption.xAxis,
-    data: data.map((el) => el.label)
+    data: data.map(el => el.label)
   } as XAXisComponentOption
   updateEchart(globalOption)
 }

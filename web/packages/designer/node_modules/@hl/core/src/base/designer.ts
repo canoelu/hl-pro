@@ -6,9 +6,13 @@ import {
   DesignerViewType,
   IViewportBounding,
   IDesignerState,
-  IMaterialMeta
+  IMaterialMeta,
+  IPage,
+  IMaterial
 } from '../../types'
-import { isClass } from '../utils/index'
+import { createMaterial, isClass } from '../utils/index'
+import Material from './material'
+import { isUndefined } from 'lodash-es'
 
 export const ISimulatorTypes: Record<string, ISimulatorType> = {
   desktop: {
@@ -23,7 +27,7 @@ export const ISimulatorTypes: Record<string, ISimulatorType> = {
   }
 }
 export class Designer {
-  public state = reactive<IDesignerState>({
+  public _info = reactive<IDesignerState>({
     id: '',
     name: '',
     thumbnail: '',
@@ -41,17 +45,16 @@ export class Designer {
   constructor() {}
 
   get pageList() {
-    return this.state.pageList
+    return this._info.pageList
   }
   get varList() {
-    return this.state.varList
+    return this._info.varList
   }
   get filterList() {
-    return this.state.filterList
+    return this._info.filterList
   }
   get materials() {
-    console.log(this.state.materials)
-    return this.state.materials
+    return this._info.materials
   }
 
   /**
@@ -61,30 +64,85 @@ export class Designer {
   /**
    * 添加页面
    */
-  addPage() {}
-  /**
-   * 加载物料
-   * @param name
-   * @param component
-   * @param image
-   * @param manifest
-   */
-  public loadMaterial(name: string, component, image, manifest?: any) {
+  addPage(page: IPage) {
+    this._info.pageList.push(page)
+  }
+  public loadMaterial(name: string, material, image, manifest?: any) {
     if (manifest) {
       this.materialMetaMap.set(name, {
         ...manifest,
         image,
-        clazz: isClass(component) ? component : undefined,
-        remoteClazz: isClass(component) ? undefined : component
+        clazz: isClass(material) ? material : undefined,
+        remoteClazz: isClass(material) ? undefined : material
       })
     } else {
-      component.image = image
-      this.state.materials[name] = component
+      material.image = image
+      this._info.materials[name] = material
     }
   }
-  public async loadMaterials(name: string, component) {}
-  public async loadMaterialClazz(name: string) {}
+  /**
+   * 实例化物料
+   * @param name
+   * @returns
+   */
+  public async loadMaterialClazz(name: string) {
+    const materialInfo = this.materialMetaMap.get(name) as IMaterialMeta
+    if (!materialInfo) {
+      return
+    }
+    if (materialInfo?.clazz) {
+      return
+    } else {
+      const remoteClazz = materialInfo.remoteClazz
+      if (remoteClazz) {
+        const result = await remoteClazz()
+        materialInfo.clazz = result?.default
+      }
+    }
+    await this.loadMaterialConfig(name)
+  }
+  /**
+   * 根据名字获取物料配置
+   * @param name
+   */
+  public async loadMaterialConfig(name: string) {
+    const materialInfo = this.materialMetaMap.get(name) as IMaterialMeta
+    if (!materialInfo) {
+      return
+    }
+    const { propValueConfig, styleConfig, panel } = materialInfo
+    if (isUndefined(propValueConfig) && isUndefined(styleConfig)) {
+      if (panel) {
+        const result = await panel()
+        const { propValue, style, demoLoader } = result.default
+        console.log('demoLoader', demoLoader)
+        materialInfo.propValueConfig = propValue || (() => [])
+        materialInfo.styleConfig = style || (() => [])
+        materialInfo.demoLoader = demoLoader || (() => {})
+      } else {
+        materialInfo.propValueConfig = () => []
+        materialInfo.styleConfig = () => []
+        materialInfo.demoLoader = () => {}
+      }
+    }
+  }
+  public loadMaterials(name: string, componentInfo: any, panel: any): void {
+    this.materialMetaMap.set(name, {
+      ...componentInfo,
+      panel: panel
+    })
+  }
   public setDesignData() {}
   public setDesignStyle() {}
+  /**
+   * 设置物料的数据
+   */
+  setMaterialInitData(list: IMaterial[]) {
+    list.forEach(item => {
+      createMaterial(item)
+    })
+    // this.resetComponentData(this.componentData)
+    // this.saveComponentData()
+  }
 }
 export default Designer

@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import { useProp } from '@open-data-v/base'
+import { useProp } from '@hl/core'
 import dayjs from 'dayjs'
 import { onMounted, onUnmounted, ref } from 'vue'
 

@@ -1,4 +1,4 @@
-import type { MetaContainerItem } from '@hl/core'
+import type { IMetaContainerItem } from '@hl/core'
 import { Material, FormTypeEnum } from '@hl/core'
 import { h } from 'vue'
 
@@ -43,7 +43,7 @@ class StaticTextComponent extends Material {
       ]
     }
   ]
-  _style: MetaContainerItem[] = [
+  _style: IMetaContainerItem[] = [
     {
       label: '字体设置',
       prop: 'font',

@@ -5,6 +5,13 @@ export enum ContainerType {
   TIMELINE = 'Timeline',
   TAB = 'Tab'
 }
+
+export enum EditModeEnum {
+  EDIT = 'edit',
+  PREVIEW = 'preview',
+  VIEW = 'view'
+}
+
 export enum Event {
   ComponentPropChange = 'component:prop',
   ComponentStyleChange = 'component:style',
@@ -92,4 +99,38 @@ export enum ContainerTypeEnum {
   CARD = 'Card',
   TIMELINE = 'Timeline',
   TAB = 'TAB'
+}
+
+export enum ComponentGroup {
+  // 基础组件
+  BASIC = 'BASIC',
+  // 边框
+  BORDER = 'BORDER',
+  // 装饰
+  DECORATION = 'DECORATION',
+  // 折线图
+  LINE = 'LINE',
+  // 柱状图
+  BAR = 'BAR',
+  // 百分比图
+  PIE = 'PIE',
+  // 地图
+  MAP = 'MAP',
+  // 仪表盘
+  GAUGE = 'GAUGE',
+  // 定制组件
+  CUSTOM = 'CUSTOM',
+  TEXT = 'TEXT',
+  BUTTON = 'BUTTON',
+  // 表格
+  TABLE = 'TABLE',
+
+  // 其他组件
+  NAVIFATION = 'NAVIFATION',
+  PROGERSS = 'PROGERSS',
+  THERMOMETER = 'THERMOMETER',
+  // 其他组件
+  OTHER = 'OTHER',
+  // 容器组件
+  CONTAINER = 'CONTAINER'
 }

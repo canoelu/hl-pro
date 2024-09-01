@@ -1,14 +1,14 @@
 <template>
-  <span v-if="propValue.base.type === 'text'" v-resize="resizeHandler">{{ customeText }}</span>
+  <span v-if="propValue.base?.type === 'text'" v-resize="resizeHandler">{{ customeText }}</span>
   <span
-    v-else-if="propValue.base.type === 'symbol'"
+    v-else-if="propValue.base?.type === 'symbol'"
     v-resize="resizeHandler"
     :class="['icon', 'iconfont', customeText]"
   ></span>
 </template>
 
 <script setup lang="ts">
-import { useProp } from '@open-data-v/base'
+import { useProp } from '@hl/core'
 import { computed, ref } from 'vue'
 
 import type StaticTextComponent from './config'

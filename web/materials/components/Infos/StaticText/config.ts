@@ -1,9 +1,9 @@
-import type { MetaContainerItem } from '@open-data-v/base'
-import { ComponentGroup, CustomComponent, FormTypeEnum } from '@open-data-v/base'
+import type { IMetaContainerItem } from '@hl/core'
+import { ComponentGroup, Material, FormTypeEnum } from '@hl/core'
 import { h } from 'vue'
 
 export const componentName = 'StaticText'
-class StaticTextComponent extends CustomComponent {
+class StaticTextComponent extends Material {
   constructor(id?: string, name?: string, icon?: string) {
     super({
       component: componentName,
@@ -16,7 +16,7 @@ class StaticTextComponent extends CustomComponent {
     })
   }
 
-  _formProp: MetaContainerItem[] = [
+  _formProp: IMetaContainerItem[] = [
     {
       label: '基础配置',
       prop: 'base',
@@ -44,7 +44,7 @@ class StaticTextComponent extends CustomComponent {
       ]
     }
   ]
-  _style: MetaContainerItem[] = [
+  _style: IMetaContainerItem[] = [
     {
       label: '字体设置',
       prop: 'font',

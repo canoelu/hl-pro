@@ -1,3 +1,14 @@
+import { Material } from '../src/base'
+import { EditModeEnum } from '../src/enums'
+
+/**
+ * 全局过滤器
+ */
+export interface IFilter {
+  name: string | number
+  description?: string
+  express?: string
+}
 /**
  * 画布样式
  */
@@ -16,14 +27,16 @@ export interface ICanvasState {
   ids: Set<string>
   name: string
   scale: number
-  activeIndex?: number
+  isShowEm: boolean
+  activeIndex?: string
   activeMaterial?: Optional<Material>
   materialsObj: Record<string, Material>
   materials: Material[]
   canvasStyleData: ICanvasStyleData
   canvasStyleConfig: ICanvasStyleConfig
-  materialData: Material[]
-
+  editMode: EditModeEnum
+  cavansMaterials: Material[] // 画布中的物料
+  benchmarkComponent: Optional<Material>
 }
 export interface ICanvasOpt {}
 // CANVAS存储数据

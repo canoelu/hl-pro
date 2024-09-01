@@ -629,7 +629,7 @@ async def init_users():
         role_super: Role | None = await role_controller.get_by_code("R_SUPER")
         user_super: User = await user_controller.create(
             UserCreate(
-                userName="Soybean",
+                userName="canoe",
                 userEmail="admin@admin.com",
                 password="123456",
             )

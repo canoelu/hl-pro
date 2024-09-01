@@ -1,4 +1,4 @@
-import type { MetaContainerItem } from '@hl/core'
+import type { IMetaContainerItem } from '@hl/core'
 import { ComponentGroup, Material, DataMode, FormTypeEnum } from '@hl/core'
 
 export const componentName = 'StereoscopicBarChart'
@@ -16,7 +16,7 @@ class StereoscopicBarChartComponent extends Material {
     })
   }
 
-  _formProp: MetaContainerItem[] = [
+  _formProp: IMetaContainerItem[] = [
     {
       label: '数据配置',
       prop: 'data',
@@ -167,7 +167,7 @@ class StereoscopicBarChartComponent extends Material {
       ]
     }
   ]
-  _style: MetaContainerItem[] = []
+  _style: IMetaContainerItem[] = []
   get exampleData(): any {
     return [
       { label: '全彩屏', value: Math.round(Math.random() * 100) },

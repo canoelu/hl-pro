@@ -5,6 +5,6 @@ import { ContainerType } from '../enums'
 
 const State = singleton(Canvas)
 // TODO 多页面的情况
-export function useCanvas() {
+export function useCanvas(): Canvas {
   return new State({ mode: ContainerType.CARD }) as Canvas
 }

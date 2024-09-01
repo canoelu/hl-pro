@@ -61,7 +61,7 @@ interface FormModel {
 }
 
 const model: FormModel = reactive({
-  userName: 'Soybean',
+  userName: 'canoe',
   password: '123456'
 });
 

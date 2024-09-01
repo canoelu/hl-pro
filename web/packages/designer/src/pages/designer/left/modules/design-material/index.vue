@@ -15,7 +15,7 @@
                         <svg-icon icon="mdi:play-arrow">
                         </svg-icon>
                     </template>
-                    <n-collapse-item v-for="category in selectMaterialPackage.children" :key='category.key'
+                    <n-collapse-item v-for="category in selectMaterialPackage?.children" :key='category.key'
                         :title="category.label" :name="category.key">
                         <material-item v-for='material in category.children' :key='material.key'
                             :material="material"></material-item>

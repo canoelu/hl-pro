@@ -7,11 +7,11 @@ import { setupDirectives } from './directives'
 import { setupStore } from '@/store'
 import { setupRouter } from '@/router'
 import { setupI18n } from '@/locales'
-import type { App } from "vue";
+import type { App } from 'vue'
 export * from './icon'
 
 export default {
-  install: async (app: App<Element>) => {
+  install: async (app: App) => {
     setupLoading()
 
     setupNProgress()

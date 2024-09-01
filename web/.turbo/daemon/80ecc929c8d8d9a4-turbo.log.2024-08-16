@@ -1,0 +1,21 @@
+2024-08-16T08:46:06.453470Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2024-08-16T08:46:06.670486Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon"), AnchoredSystemPathBuf(".turbo\\cookies\\.turbo-cookie"), AnchoredSystemPathBuf(".turbo"), AnchoredSystemPathBuf(".turbo\\cookies"), AnchoredSystemPathBuf(".turbo\\cookies\\1.cookie")}
+2024-08-16T08:46:06.670574Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-08-16T08:46:07.950307Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\daemon\\80ecc929c8d8d9a4-turbo.log.2024-08-16")}
+2024-08-16T08:46:07.950325Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-08-16T08:46:11.151600Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\admin-app"), AnchoredSystemPathBuf("apps\\admin-app\\vite.config.ts.timestamp-1723797971130-c3f808b5a52a1.mjs")}
+2024-08-16T08:46:11.151622Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("admin-app"), path: AnchoredSystemPathBuf("apps\\admin-app") }}))
+2024-08-16T08:46:11.456283Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code"), AnchoredSystemPathBuf("apps\\low-code\\vite.config.ts.timestamp-1723797971357-cbb8494d13ab7.mjs")}
+2024-08-16T08:46:11.456301Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-08-16T08:46:12.345581Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\admin-app"), AnchoredSystemPathBuf("apps\\admin-app\\vite.config.ts.timestamp-1723797971130-c3f808b5a52a1.mjs")}
+2024-08-16T08:46:12.345600Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("admin-app"), path: AnchoredSystemPathBuf("apps\\admin-app") }}))
+2024-08-16T08:46:43.844482Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\vite.config.ts.timestamp-1723797971357-cbb8494d13ab7.mjs")}
+2024-08-16T08:46:43.844533Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-08-16T08:46:44.026426Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code")}
+2024-08-16T08:46:44.026438Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-08-16T08:46:44.026720Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-08-16T08:46:50.349568Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\low-code\\src\\typings\\auto-imports.d.ts")}
+2024-08-16T08:46:50.349591Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@hl/low-code"), path: AnchoredSystemPathBuf("apps\\low-code") }}))
+2024-08-16T08:46:50.496337Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2024-08-16T09:08:54.549808Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo\\cookies")}
+2024-08-16T09:08:54.549834Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))

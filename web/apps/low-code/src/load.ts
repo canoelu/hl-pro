@@ -14,13 +14,14 @@ const useLoadComponent = () => {
         if (componentOptions) {
           const { componentName, config, manifest, component, images } = componentOptions
           const name = manifest ? manifest.name : componentName
-          designerState.loadMaterial(name, config,images, manifest)
+          designerState.loadMaterial(name, config, images, manifest)
           // 注册异步组件
           const asyncComp = defineAsyncComponent({
             loader: component,
             delay: 200,
             timeout: 3000
           })
+          
           app.component(name, asyncComp)
         } else {
           console.error(`${key} is not a valid component`)

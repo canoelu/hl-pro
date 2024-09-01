@@ -3,8 +3,8 @@
 </template>
 
 <script setup lang="ts">
-import type { Response } from '@open-data-v/base'
-import { useData, useProp } from '@open-data-v/base'
+import type { IResponse } from '@hl/core'
+import { useData, useProp } from '@hl/core'
 import type { EChartsOption, PieSeriesOption } from 'echarts'
 import { onMounted, ref } from 'vue'
 

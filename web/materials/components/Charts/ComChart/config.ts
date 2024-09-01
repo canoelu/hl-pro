@@ -1,7 +1,7 @@
-import { ComponentGroup, CustomComponent, DataMode } from '@open-data-v/base'
+import { ComponentGroup, Material, DataMode } from '@hl/core'
 
 export const componentName = 'ComChart'
-class ComChartComponent extends CustomComponent {
+class ComChartComponent extends Material {
   constructor(id?: string, name?: string, icon?: string) {
     super({
       component: componentName,

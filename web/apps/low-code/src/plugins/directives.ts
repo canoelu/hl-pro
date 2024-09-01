@@ -1,8 +1,8 @@
-import { App } from 'vue';
+import { App } from 'vue'
 import VueLazyLoad from 'vue3-lazyload'
 import { requireErrorImg } from '@/utils/utils'
 
-// import { x } from '@/directives';
+import { Directive } from '@hl/designer'
 
 /**
  * 注册全局自定义指令
@@ -11,6 +11,7 @@ import { requireErrorImg } from '@/utils/utils'
 export function setupDirectives(app: App) {
   // 图片懒加载
   app.use(VueLazyLoad, {
-    error: requireErrorImg(),
+    error: requireErrorImg()
   })
+  app.use(Directive)
 }

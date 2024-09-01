@@ -12,3 +12,20 @@ export interface IGroupByConfig<T> {
   cIcon: keyof T
 }
 export type IClass = { new (...args: any[]): any }
+
+export interface IVector {
+  x: number
+  y: number
+}
+
+export interface DOMRectStyle {
+  width: number
+  height: number
+  left: number
+  top: number
+  rotate: number
+}
+export type IPosition = Omit<DOMRectStyle, 'rotate'>
+export interface ComponentStyle extends DOMRectStyle {
+  [propName: string]: string | number | boolean
+}

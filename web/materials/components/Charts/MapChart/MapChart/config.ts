@@ -1,9 +1,9 @@
-import type { MetaContainerItem } from '@open-data-v/base'
-import { ComponentGroup, CustomComponent, DataMode, FormTypeEnum } from '@open-data-v/base'
+import type { IMetaContainerItem } from '@hl/core'
+import { ComponentGroup, Material, DataMode, FormTypeEnum } from '@hl/core'
 import { h } from 'vue'
 
 export const componentName = 'MapChart'
-class MapChartComponent extends CustomComponent {
+class MapChartComponent extends Material {
   constructor(id?: string, name?: string, icon?: string) {
     super({
       component: componentName,
@@ -17,7 +17,7 @@ class MapChartComponent extends CustomComponent {
     })
   }
 
-  _formProp: MetaContainerItem[] = [
+  _formProp: IMetaContainerItem[] = [
     {
       label: '文字配置',
       prop: 'label',
@@ -112,7 +112,7 @@ class MapChartComponent extends CustomComponent {
       ]
     }
   ]
-  _style: MetaContainerItem[] = []
+  _style: IMetaContainerItem[] = []
 
   get exampleData() {
     return [

@@ -1,9 +1,9 @@
-import type { MetaContainerItem } from '@open-data-v/base'
-import { ComponentGroup, CustomComponent, DataMode, FormTypeEnum } from '@open-data-v/base'
+import type { IMetaContainerItem } from '@hl/core'
+import { ComponentGroup, Material, DataMode, FormTypeEnum } from '@hl/core'
 import { h } from 'vue'
 
 export const componentName = 'BasicPieChart'
-class BasicPieChartComponent extends CustomComponent {
+class BasicPieChartComponent extends Material {
   constructor(id?: string, name?: string, icon?: string) {
     super({
       component: componentName,
@@ -17,7 +17,7 @@ class BasicPieChartComponent extends CustomComponent {
     })
   }
 
-  _formProp: MetaContainerItem[] = [
+  _formProp: IMetaContainerItem[] = [
     {
       label: '数据配置',
       prop: 'data',
@@ -127,7 +127,7 @@ class BasicPieChartComponent extends CustomComponent {
       ]
     }
   ]
-  _style: MetaContainerItem[] = []
+  _style: IMetaContainerItem[] = []
   get exampleData() {
     return [
       { label: '秦', value: Math.round(Math.random() * 100) },

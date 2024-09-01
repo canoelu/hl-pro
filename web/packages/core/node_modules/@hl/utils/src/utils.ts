@@ -3,7 +3,7 @@ import { AsyncComponentLoader, defineAsyncComponent } from 'vue'
 
 import { isFunction, isUndefined } from 'lodash-es'
 import { downloadByA } from './file'
-import { IClass, IGroupByConfig } from './types'
+import { DOMRectStyle, IClass, IGroupByConfig, IVector } from './types'
 
 /**
  * * 截取画面为图片并下载
@@ -144,3 +144,32 @@ export const loadAsyncComponent = (loader: AsyncComponentLoader<any>) =>
     // loadingComponent: AsyncLoading,
     delay: 10
   })
+
+export const copyText = (text: string): void => {
+  const copy = (event: ClipboardEvent) => {
+    event.clipboardData?.setData('text', text)
+    event.preventDefault()
+  }
+  document.addEventListener('copy', copy)
+  document.execCommand('copy')
+  document.removeEventListener('copy', copy)
+}
+/**
+ * 请求动画帧的节流工具
+ * @param fn 被执行的函数
+ * @returns
+ */
+export function throttleFrame(fn: Function) {
+  let timer = 0
+  return function (this: any, ...args: any[]) {
+    const self = this
+    if (timer) {
+      cancelAnimationFrame(timer)
+      timer = 0
+    }
+    timer = requestAnimationFrame(() => {
+      timer = 0
+      fn.apply(self, args)
+    })
+  }
+}
