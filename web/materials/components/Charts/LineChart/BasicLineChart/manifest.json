@@ -5,6 +5,7 @@
   "categoryTitle": "折线图",
   "package": "charts",
   "packageTitle": "图表",
+  "icon":"ph:chart-line",
   "size": {
     "width": 500,
     "height": 170

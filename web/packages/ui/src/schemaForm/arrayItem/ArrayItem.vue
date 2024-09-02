@@ -30,7 +30,6 @@
 </template>
 
 <script lang="ts" setup>
-// import { OInput } from '@open-data-v/ui'
 import { isNumber } from 'lodash-es'
 import { nextTick, reactive, ref } from 'vue'
 
@@ -55,9 +54,7 @@ const emits = defineEmits<{
 
 const addInputEl = ref<HTMLInputElement>()
 const newValue = ref<string>('')
-const arrayValue = reactive<string[]>(
-  props.type === 'static' ? new Array(props.count).fill('') : []
-)
+const arrayValue = reactive<string[]>(props.type === 'static' ? new Array(props.count).fill('') : [])
 arrayValue.splice(0, props.value.length, ...props.value)
 
 const handleAdd = () => {

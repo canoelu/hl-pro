@@ -1,0 +1,13 @@
+{
+  "name": "Tabs",
+  "title": "标签页",
+  "category": "CONTAINER",
+  "package": "container",
+  "packageTitle": "容器",
+  "categoryTitle": "标签页",
+  "icon": "pajamas:container-image",
+  "size": {
+    "width": 400,
+    "height": 200
+  }
+}

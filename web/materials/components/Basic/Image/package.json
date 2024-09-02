@@ -1,0 +1,16 @@
+{
+  "name": "image",
+  "version": "1.0.0",
+  "description": "图片组件",
+  "main": "index.ts",
+  "scripts": {},
+  "keywords": [
+    "hl-pro"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@hl/core":"workspace:*"
+  },
+  "devDependencies": {}
+}

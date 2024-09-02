@@ -1,10 +1,9 @@
 <template>
-    <menu-content title='资源库' class="hl-design-source">
-        <div></div>
-    </menu-content>
+  <content-box title="数据源" class="hl-design-source">
+    <div>数据源</div>
+  </content-box>
 </template>
 <script lang="ts" setup>
-import MenuContent from '@/views/design/components/content-wrap/index.vue'
-
+import ContentBox from '../../../../../components/content-box'
 </script>
 <style lang="scss" scoped></style>

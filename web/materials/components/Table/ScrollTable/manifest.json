@@ -1,0 +1,14 @@
+{
+  "name": "ScrollTable",
+  "title": "滚动表格",
+  "category": "TABLE",
+  "package": "list",
+  "packageTitle": "列表",
+  "categoryTitle": "滚动表格",
+  "icon": "material-symbols:table",
+  "size": {
+    "width": 400,
+    "height": 100
+  },
+  "dataMode": "UNIVERSAL"
+}

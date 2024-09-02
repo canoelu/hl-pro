@@ -5,12 +5,12 @@
   "main": "index.ts",
   "scripts": {},
   "keywords": [
-    "OpenDataV"
+    "智览世界"
   ],
-  "author": "chenghaiwen",
+  "author": "",
   "license": "Apache-2.0",
   "dependencies": {
     "dayjs": "^1.11.5",
-    "@open-data-v/base":"workspace:*"
+    "@hl/core":"workspace:*"
   }
 }

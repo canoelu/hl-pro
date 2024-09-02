@@ -1,0 +1,13 @@
+{
+  "name": "Decoration4",
+  "title": "4#装饰",
+  "category": "DECORATION",
+  "package": "decorate",
+  "packageTitle": "装饰",
+  "categoryTitle": "边框",
+  "icon": "fluent:border-top-20-filled",
+  "size": {
+    "width": 200,
+    "height": 10
+  }
+}

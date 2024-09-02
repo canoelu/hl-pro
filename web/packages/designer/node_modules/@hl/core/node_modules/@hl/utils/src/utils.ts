@@ -1,5 +1,6 @@
 import html2canvas from 'html2canvas'
 import { AsyncComponentLoader, defineAsyncComponent } from 'vue'
+import Color from 'color'
 
 import { isFunction, isUndefined } from 'lodash-es'
 import { downloadByA } from './file'
@@ -28,7 +29,7 @@ export const canvasCut = (html: HTMLElement | null, callback?: Function) => {
  * * 生成一个不重复的ID
  * @param { Number } randomLength
  */
-export const getUUID = (randomLength = 10) => {
+export const makeUuid = (randomLength = 10) => {
   return 'id_' + Number(Math.random().toString().substring(2, randomLength) + Date.now()).toString(36)
 }
 
@@ -80,6 +81,7 @@ export function groupByPackageAndCategory<T extends Record<string, any>>(
     const picon = icon ? item[icon] : ''
     const categoryKey = item[children]
     const cName = item[cTitle]
+    console.log(item,cTitle)
     const image = item[cIcon]
     let packageGroup = acc.find(pkg => pkg.key === packageKey)
     if (!packageGroup) {
@@ -172,4 +174,15 @@ export function throttleFrame(fn: Function) {
       fn.apply(self, args)
     })
   }
+}
+
+
+/**
+ * * hsla 转换
+ * @param color 颜色
+ * @param alpha 默认1
+ * @returns
+ */
+export function alpha(color: string, alpha = 1) {
+  return Color(color).alpha(alpha).toString()
 }

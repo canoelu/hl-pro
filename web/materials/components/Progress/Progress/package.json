@@ -1,0 +1,16 @@
+{
+  "name": "progress",
+  "version": "1.0.0",
+  "description": "进度条组件",
+  "main": "index.ts",
+  "scripts": {},
+  "keywords": [
+    "hl-pro"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@hl/core":"workspace:*"
+  },
+  "devDependencies": {}
+}

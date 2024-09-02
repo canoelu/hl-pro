@@ -1,2 +1,2 @@
-import DesignFilter from './index.vue'
-export default DesignFilter
+import DesignLayout from './index.vue'
+export default DesignLayout

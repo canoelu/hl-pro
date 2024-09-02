@@ -48,7 +48,7 @@
 <script setup lang="ts">
 import { PropType, toRefs, computed } from 'vue'
 import { CreateMaterialType } from '@/typings/design'
-import { getUUID } from '@/utils'
+import { makeUuid } from '@/utils'
 
 const props = defineProps({
   chartConfig: {
@@ -57,9 +57,9 @@ const props = defineProps({
   }
 })
 
-const path = `border-box-08-path-${getUUID()}`
-const gradient = `border-box-08-gradient-${getUUID()}`
-const mask = `border-box-08-mask-${getUUID()}`
+const path = `border-box-08-path-${makeUuid()}`
+const gradient = `border-box-08-gradient-${makeUuid()}`
+const mask = `border-box-08-mask-${makeUuid()}`
 
 const { w, h } = toRefs(props.chartConfig.attr)
 const { colors, dur, backgroundColor, reverse } = toRefs(

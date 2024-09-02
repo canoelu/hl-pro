@@ -35,7 +35,7 @@ onUnmounted(() => {
 })
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 span {
   display: inline-block;
   width: 100%;

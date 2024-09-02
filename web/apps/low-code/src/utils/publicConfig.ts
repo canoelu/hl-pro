@@ -1,4 +1,4 @@
-import { getUUID } from '@/utils'
+import { makeUuid } from '@/utils'
 import { BaseEvent, EventLife } from '@/enums/eventEnum'
 import {
   RequestHttpEnum,
@@ -38,7 +38,7 @@ export const requestConfig: RequestConfigType = {
 
 // 单实例类
 export class PublicConfigClass implements PublicConfigType {
-  public id = getUUID()
+  public id = makeUuid()
   public isGroup = false
   // 基本信息
   public attr = { ...chartInitConfig, zIndex: -1 }
@@ -125,7 +125,7 @@ export class PublicGroupConfigClass extends PublicConfigClass implements CreateM
   // 配置
   public option = {}
   // 标识
-  public id = getUUID()
+  public id = makeUuid()
   // 基本信息
   public attr = { w: 0, h: 0, x: 0, y: 0, offsetX: 0, offsetY: 0, zIndex: -1 }
 }

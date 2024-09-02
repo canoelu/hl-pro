@@ -32,7 +32,7 @@
 <script setup lang="ts">
 import { PropType, toRefs } from 'vue'
 import { CreateMaterialType } from '@/typings/design'
-import { getUUID } from '@/utils'
+import { makeUuid } from '@/utils'
 const props = defineProps({
   chartConfig: {
     type: Object as PropType<CreateMaterialType>,
@@ -40,7 +40,7 @@ const props = defineProps({
   }
 })
 
-const id = getUUID()
+const id = makeUuid()
 const { w, h } = toRefs(props.chartConfig.attr)
 const { colors, dataset, textSize, textColor } = toRefs(props.chartConfig.option)
 </script>

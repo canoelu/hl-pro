@@ -9,7 +9,7 @@
   :component="StaticText"
   :prop-value="{
     base: {
-      text: '我们一起建设OpenDataV吧',
+      text: '我们一起建设hl-pro吧',
       type: 'text'
     }
 }"
@@ -80,7 +80,7 @@ import StaticText from './StaticText.vue'
 import type { StaticTextType } from './type'
 const propValue: StaticTextType = {
   base: {
-    text: 'OpenDataV',
+    text: '智览世界',
     type: 'text'
   }
 }

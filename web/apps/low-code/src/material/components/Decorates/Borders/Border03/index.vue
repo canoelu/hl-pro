@@ -101,7 +101,7 @@
 <script setup lang="ts">
 import { PropType, toRefs } from 'vue'
 import { CreateMaterialType } from '@/typings/design'
-import { getUUID, alpha } from '@/utils'
+import { makeUuid, alpha } from '@/utils'
 
 const props = defineProps({
   chartConfig: {
@@ -109,7 +109,7 @@ const props = defineProps({
     required: true
   }
 })
-const filterId = `border-box-03-filterId-${getUUID()}`
+const filterId = `border-box-03-filterId-${makeUuid()}`
 
 const { w, h } = toRefs(props.chartConfig.attr)
 const { colors, backgroundColor } = toRefs(props.chartConfig.option)

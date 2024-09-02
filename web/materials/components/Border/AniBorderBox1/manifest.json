@@ -1,0 +1,13 @@
+{
+  "name": "AnimateBorderBox1",
+  "title": "1#动态边框",
+  "category": "ANIMATE_BORDER",
+  "package": "border",
+  "packageTitle": "边框",
+  "categoryTitle": "动态边框",
+  "icon": "fluent:border-none-16-filled",
+  "size": {
+    "width": 260,
+    "height": 260
+  }
+}

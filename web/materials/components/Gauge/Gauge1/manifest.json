@@ -1,0 +1,12 @@
+{
+  "name": "Gauge1",
+  "title": "1#仪表盘",
+  "category": "GAUGE",
+  "package": "charts",
+  "packageTitle": "图表",
+  "categoryTitle": "仪表盘",
+  "size": {
+    "width": 200,
+    "height": 200
+  }
+}

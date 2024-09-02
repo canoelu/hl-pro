@@ -1,0 +1,16 @@
+{
+  "name": "gauge",
+  "version": "1.0.0",
+  "description": "1#仪表盘",
+  "main": "index.ts",
+  "scripts": {},
+  "keywords": [
+    "hl-pro"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@hl/core":"workspace:*"
+  },
+  "devDependencies": {}
+}

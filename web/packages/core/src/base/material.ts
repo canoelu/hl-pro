@@ -1,5 +1,5 @@
 import { h } from 'vue'
-import { getUUID } from '@hl/utils'
+import { makeUuid } from '@hl/utils'
 import { FormTypeEnum, ContainerTypeEnum, DataMode } from '../enums'
 import {
   buildModeValue,
@@ -47,7 +47,7 @@ export class Material {
 
   // form表单中使用
   _formProp: IMetaContainerItem[] = []
-  private _style: IMetaContainerItem[] = []
+  _style: IMetaContainerItem[] = []
   _formPropValue: Record<string, any> = {}
   _styleValue: IMaterialStyle = {
     ...this.positionStyle
@@ -67,7 +67,7 @@ export class Material {
   groupStyle?: IGroupStyle
 
   constructor(config: IMaterialConfig) {
-    this.id = config.id || getUUID()
+    this.id = config.id || makeUuid()
     this.name = config.name
     this.component = config.component
     this.icon = config.icon || ''

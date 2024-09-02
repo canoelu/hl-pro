@@ -1,0 +1,13 @@
+{
+  "name": "BorderBox3",
+  "title": "3#边框",
+  "category": "BORDER",
+  "package": "border",
+  "packageTitle": "边框",
+  "categoryTitle": "边框",
+  "icon": "fluent:border-none-16-filled",
+  "size": {
+    "width": 200,
+    "height": 200
+  }
+}

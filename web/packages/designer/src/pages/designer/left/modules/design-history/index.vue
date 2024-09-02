@@ -1,5 +1,5 @@
 <template>
-    <menu-content title='历史记录' class="hl-design-history">
+    <content-box title='历史记录' class="hl-design-history">
         <div v-for='(item, index) in snapShotState.list' :key='item.time'>
             <div @click='() => handleClick(item, index)'>
                 {{ item.time }}
@@ -7,10 +7,10 @@
 
             </div>
         </div>
-    </menu-content>
+    </content-box>
 </template>
 <script lang="ts" setup>
-import MenuContent from '@/views/design/components/content-wrap/index.vue'
+import ContentBox from '../../../../../components/content-box'
 import { useSnapshotState } from '@hl/core'
 const snapShotState = useSnapshotState()
 function handleClick(_item, index) {

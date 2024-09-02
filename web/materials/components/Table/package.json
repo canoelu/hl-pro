@@ -1,0 +1,16 @@
+{
+  "name": "scrolltable",
+  "version": "1.0.0",
+  "description": "hl-pro滚动表格",
+  "main": "ScrollTable/index.ts",
+  "scripts": {},
+  "keywords": [
+    "hl-pro"
+  ],
+  "author": "xingxingzaixian",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@hl/core":"workspace:*",
+    "@hl/ui":"workspace:*"
+  }
+}

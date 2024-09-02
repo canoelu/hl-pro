@@ -1,0 +1,13 @@
+{
+  "name": "Image",
+  "title": "图片",
+  "category": "pic",
+  "package": "basic",
+  "packageTitle": "基础",
+  "categoryTitle": "图片",
+  "icon":"ic:baseline-apps",
+  "size": {
+    "width": 200,
+    "height": 200
+  }
+}

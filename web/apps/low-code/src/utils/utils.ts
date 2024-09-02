@@ -34,7 +34,7 @@ export const loadSkeletonAsyncComponent = (loader: AsyncComponentLoader<any>) =>
  * * 生成一个不重复的ID
  * @param { Number } randomLength
  */
-export const getUUID = (randomLength = 10) => {
+export const makeUuid = (randomLength = 10) => {
   return 'id_' + Number(Math.random().toString().substring(2, randomLength) + Date.now()).toString(36)
 }
 /**

@@ -5,7 +5,7 @@
         v-if="!menu.hide"
         class="menu-item"
         :class="{ divider: menu.divider, disable: menu.disable }"
-        @click.stop="(event:MouseEvent) => handleClickMenuItem(menu, event)"
+        @click.stop="(event: MouseEvent) => handleClickMenuItem(menu, event)"
       >
         <div
           v-if="!menu.divider"
@@ -39,21 +39,21 @@ defineProps<{
 }>()
 </script>
 
-<style lang="less" scoped>
-@menuWidth: 170px;
-@menuHeight: 30px;
-@subMenuWidth: 120px;
-@borderColor: #eee;
-@boxShadow: 3px 3px 3px rgba(#000, 0.15);
-@transitionDelayFast: 0.1s;
-@themeColor: #d14424;
-@transitionDelay: 0.2s;
+<style lang="scss" scoped>
+$menuWidth: 170px;
+$menuHeight: 30px;
+$subMenuWidth: 120px;
+$borderColor: #eee;
+$boxShadow: 3px 3px 3px rgba(#000, 0.15);
+$transitionDelayFast: 0.1s;
+$themeColor: #d14424;
+$transitionDelay: 0.2s;
 .menu-content {
-  width: @menuWidth;
+  width: $menuWidth;
   padding: 5px 0;
   background: #fff;
-  border: 1px solid @borderColor;
-  box-shadow: @boxShadow;
+  border: 1px solid $borderColor;
+  box-shadow: $boxShadow;
   border-radius: 2px;
   list-style: none;
   margin: 0;
@@ -62,10 +62,10 @@ defineProps<{
   padding: 0 20px;
   color: #555;
   font-size: 12px;
-  transition: all @transitionDelayFast;
+  transition: all $transitionDelayFast;
   white-space: nowrap;
-  height: @menuHeight;
-  line-height: @menuHeight;
+  height: $menuHeight;
+  line-height: $menuHeight;
   background-color: #fff;
   cursor: pointer;
 
@@ -124,14 +124,14 @@ defineProps<{
     right: 18px;
     top: 3px;
     transform: scale(0);
-    transition: transform @transitionDelay;
+    transition: transform $transitionDelay;
   }
 
   .sub-text {
     opacity: 0.6;
   }
   .sub-menu {
-    width: @subMenuWidth;
+    width: $subMenuWidth;
     position: absolute;
     display: none;
     left: 112%;

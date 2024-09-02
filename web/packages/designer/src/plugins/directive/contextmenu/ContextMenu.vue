@@ -59,7 +59,7 @@ const handleClickMenuItem = (item: ContextmenuItem, event: MouseEvent) => {
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="scss" scoped>
 .mask {
   position: fixed;
   left: 0;

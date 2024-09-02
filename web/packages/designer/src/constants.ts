@@ -16,7 +16,7 @@ export const menuList = [
     icon: 'mdi:image-filter-none',
     disabled: false,
     order: 2,
-    component: loadAsyncComponent(() => import('./pages/designer/left/modules/design-material/index'))
+    component: loadAsyncComponent(() => import('./pages/designer/left/modules/design-layout/index'))
   },
   {
     label: '数据源',

@@ -1,5 +1,5 @@
 import { reactive } from 'vue'
-import { getUUID, DOMRectStyle, mod360, IVector, rotatePoint } from '@hl/utils'
+import { makeUuid, DOMRectStyle, mod360, IVector, rotatePoint } from '@hl/utils'
 import { ICanvasOpt, ICanvasState, ICanvasStyleConfig, IMaterialMeta, SnapMessageEnum } from '../../types'
 import Material from './material'
 import { ContainerType, EditModeEnum } from '../enums'
@@ -249,7 +249,7 @@ export class Canvas {
       // 重置组件 ID
 
       if (this.ids.has(item.id!)) {
-        item.id = getUUID()
+        item.id = makeUuid()
       }
 
       this.ids.add(item.id!)

@@ -1,0 +1,13 @@
+{
+  "name": "Progress",
+  "title": "进度条",
+  "category": "PROGERSS",
+  "package": "list",
+  "packageTitle": "列表",
+  "categoryTitle": "进度条",
+  "icon": "material-symbols:table",
+  "size": {
+    "width": 800,
+    "height": 400
+  }
+}

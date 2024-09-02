@@ -2,6 +2,10 @@
   "name": "StereoscopicBarChart",
   "title": "立体柱状图",
   "category": "BAR",
+  "categoryTitle": "柱状图",
+  "icon":"ph:chart-line",
+  "package": "charts",
+  "packageTitle": "图表",
   "size": {
     "width": 500,
     "height": 170

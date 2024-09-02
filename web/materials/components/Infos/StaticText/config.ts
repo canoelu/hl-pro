@@ -38,7 +38,7 @@ class StaticTextComponent extends Material {
           label: '自定义文本',
           type: FormTypeEnum.TEXT,
           props: {
-            defaultValue: 'OpenDataV'
+            defaultValue: '智览世界'
           }
         }
       ]

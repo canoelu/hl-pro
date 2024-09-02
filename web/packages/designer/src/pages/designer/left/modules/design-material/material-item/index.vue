@@ -1,6 +1,6 @@
 <template>
   <div
-    class="material-item relative border-radius-6px mb-2 p-2 cursor-pointer"
+    class="material-item relative border-radius-6px mb-2 p-2 cursor-pointer bg-#f2f3f5 dark:bg-dark"
     draggable="true"
     :data-component="material"
     @dragstart="e => dragStartHandle(e)"

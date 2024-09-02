@@ -1,0 +1,13 @@
+{
+  "name": "FlvVideo",
+  "title": "视频",
+  "category": "video",
+  "package": "basic",
+  "packageTitle": "基础",
+  "categoryTitle": "视频",
+  "icon": "ic:baseline-apps",
+  "size": {
+    "width": 400,
+    "height": 225
+  }
+}

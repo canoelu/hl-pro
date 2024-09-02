@@ -5,6 +5,7 @@
   "categoryTitle": "文字",
   "package": "Infos",
   "packageTitle": "信息",
+  "icon": "mdi:information-outline",
   "size": {
     "width": 200,
     "height": 50
