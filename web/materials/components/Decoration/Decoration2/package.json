@@ -1,5 +1,5 @@
 {
-  "name": "decoration2",
+  "name": "@hl/decoration2",
   "version": "1.0.0",
   "description": "2#装饰",
   "main": "index.ts",

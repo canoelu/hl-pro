@@ -2,6 +2,8 @@ export interface Decoration {
   base: {
     color1: string
     color2: string
-    pointSideLength: number
+    lineHeight: number
+    endWidth: number
+    dur: number
   }
 }

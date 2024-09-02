@@ -2,8 +2,8 @@
   "name": "BorderBox4",
   "title": "4#边框",
   "category": "BORDER",
-  "package": "border",
-  "packageTitle": "边框",
+  "package": "little_comp",
+  "packageTitle": "小组件",
   "categoryTitle": "边框",
   "icon": "fluent:border-none-16-filled",
   "size": {

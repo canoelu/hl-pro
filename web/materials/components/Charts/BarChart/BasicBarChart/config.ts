@@ -218,13 +218,13 @@ class BasicBarChartComponent extends Material {
   _style: IMetaContainerItem[] = []
   get exampleData(): any {
     return [
-      { label: '秦', value: Math.round(Math.random() * 100) },
-      { label: '齐', value: Math.round(Math.random() * 100) },
-      { label: '楚', value: Math.round(Math.random() * 100) },
-      { label: '赵', value: Math.round(Math.random() * 100) },
-      { label: '燕', value: Math.round(Math.random() * 100) },
-      { label: '韩', value: Math.round(Math.random() * 100) },
-      { label: '魏', value: Math.round(Math.random() * 100) }
+      { label: '1月', value: Math.round(Math.random() * 100) },
+      { label: '2月', value: Math.round(Math.random() * 100) },
+      { label: '3月', value: Math.round(Math.random() * 100) },
+      { label: '4月', value: Math.round(Math.random() * 100) },
+      { label: '5月', value: Math.round(Math.random() * 100) },
+      { label: '6月', value: Math.round(Math.random() * 100) },
+      { label: '7月', value: Math.round(Math.random() * 100) }
     ]
   }
 }

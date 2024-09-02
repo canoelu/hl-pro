@@ -9,8 +9,8 @@ class DecorationComponent extends Material {
       group: ComponentGroup.DECORATION,
       name: name ? name : '3#装饰',
       id,
-      width: 200,
-      height: 60
+      width: 260,
+      height: 30
     })
   }
 
@@ -19,6 +19,29 @@ class DecorationComponent extends Material {
       label: '基础配置',
       prop: 'base',
       children: [
+        {
+          label: '内容',
+          prop: 'dataset',
+          type: FormTypeEnum.TEXT,
+          props: {
+            defaultValue: '标题'
+          }
+        },
+        {
+          label: '文字大小',
+          prop: 'textSize',
+          type: FormTypeEnum.NUMBER,
+          props: {
+            defaultValue: 24
+          }
+        }, {
+          label: '文字颜色',
+          prop: 'textColor',
+          type: FormTypeEnum.COLOR,
+          props: {
+            defaultValue: '#fff'
+          }
+        },
         {
           prop: 'color1',
           label: '颜色1',

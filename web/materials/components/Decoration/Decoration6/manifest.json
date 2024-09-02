@@ -1,0 +1,13 @@
+{
+  "name": "Decoration6",
+  "title": "6#装饰",
+  "category": "DECORATION",
+  "package": "little_comp",
+  "packageTitle": "小组件",
+  "categoryTitle": "边框",
+  "icon": "fluent:border-top-20-filled",
+  "size": {
+    "width": 200,
+    "height": 30
+  }
+}

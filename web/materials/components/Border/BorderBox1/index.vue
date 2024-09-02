@@ -1,5 +1,5 @@
 <template>
-  <div v-resize="resizeHandler" class="dv-border-box-2">
+  <div v-resize="resizeHandler" class="border-box-2">
     <svg :width="w" :height="h">
       <defs>
         <filter :id="filterId" height="150%" width="150%" x="-25%" y="-25%">

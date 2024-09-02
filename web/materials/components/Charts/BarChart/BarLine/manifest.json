@@ -1,0 +1,14 @@
+{
+  "name": "BasicBarChart",
+  "title": "基础柱状图",
+  "package": "charts",
+  "packageTitle": "图表",
+  "category": "BAR",
+  "categoryTitle": "柱状图",
+  "icon":"uil:chart-bar",
+  "size": {
+    "width": 500,
+    "height": 170
+  },
+  "dataMode": "UNIVERSAL"
+}

@@ -170,10 +170,10 @@ class StereoscopicBarChartComponent extends Material {
   _style: IMetaContainerItem[] = []
   get exampleData(): any {
     return [
-      { label: '全彩屏', value: Math.round(Math.random() * 100) },
-      { label: '双基色屏', value: Math.round(Math.random() * 100) },
-      { label: '简易屏', value: Math.round(Math.random() * 100) },
-      { label: '条形屏', value: Math.round(Math.random() * 100) }
+      { label: '北京', value: Math.round(Math.random() * 100) },
+      { label: '上海', value: Math.round(Math.random() * 100) },
+      { label: '杭州', value: Math.round(Math.random() * 100) },
+      { label: '广州', value: Math.round(Math.random() * 100) }
     ]
   }
 }

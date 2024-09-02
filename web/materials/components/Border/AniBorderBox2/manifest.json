@@ -2,8 +2,8 @@
   "name": "AnimateBorderBox2",
   "title": "2#动态边框",
   "category": "ANIMATE_BORDER",
-  "package": "border",
-  "packageTitle": "边框",
+  "package": "little_comp",
+  "packageTitle": "小组件",
   "categoryTitle": "动态边框",
   "icon": "fluent:border-none-16-filled",
   "size": {

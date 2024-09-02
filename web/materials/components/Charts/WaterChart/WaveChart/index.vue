@@ -5,7 +5,6 @@
 <script lang="ts" setup>
 import 'echarts-liquidfill'
 
-import type { IResponse } from '@hl/core'
 import { useData, useProp } from '@hl/core'
 import { onMounted, ref } from 'vue'
 
@@ -17,15 +16,16 @@ const props = defineProps<{
   component: WaveChartComponent
 }>()
 
-const chartEl = ref<ElRef>(null)
+const chartEl = ref(null)
 const { updateEchart, resizeHandler } = useEchart(chartEl)
 const chartData = ref<number>(0)
 const dataChange = (resp: Response, _?: string) => {
   if (resp.status === 'SUCCESS') {
     chartData.value = resp.afterData
+    updateEchart(getOption())
+
   }
 
-  updateEchart(getOption())
 }
 useData(props.component, dataChange)
 

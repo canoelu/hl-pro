@@ -81,7 +81,6 @@ export function groupByPackageAndCategory<T extends Record<string, any>>(
     const picon = icon ? item[icon] : ''
     const categoryKey = item[children]
     const cName = item[cTitle]
-    console.log(item,cTitle)
     const image = item[cIcon]
     let packageGroup = acc.find(pkg => pkg.key === packageKey)
     if (!packageGroup) {

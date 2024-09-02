@@ -1,7 +1,7 @@
 {
-  "name": "decoration5",
+  "name": "@hl/decoration4",
   "version": "1.0.0",
-  "description": "5#装饰",
+  "description": "4#装饰",
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

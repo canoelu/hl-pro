@@ -10,8 +10,8 @@ class DecorationComponent extends Material {
       group: ComponentGroup.DECORATION,
       name: name ? name : '2#装饰',
       id,
-      width: 200,
-      height: 60
+      width: 260,
+      height: 30
     })
   }
 
@@ -25,7 +25,7 @@ class DecorationComponent extends Material {
           label: '颜色1',
           type: FormTypeEnum.COLOR,
           props: {
-            defaultValue: '#6586ec80'
+            defaultValue: '#ffffff4d'
           }
         },
         {
@@ -33,15 +33,23 @@ class DecorationComponent extends Material {
           label: '颜色2',
           type: FormTypeEnum.COLOR,
           props: {
-            defaultValue: '#2cf7fe80'
+            defaultValue: '#ffffff4d'
           }
         },
         {
-          prop: 'text',
-          label: '文本',
-          type: FormTypeEnum.TEXT,
+          prop: 'lineHeight',
+          label: '线条高度',
+          type: FormTypeEnum.NUMBER,
           props: {
-            defaultValue: 'hl-pro'
+            defaultValue: 3
+          }
+        },
+        {
+          prop: 'dur',
+          label: '速度',
+          type: FormTypeEnum.NUMBER,
+          props: {
+            defaultValue: 3
           }
         }
       ]
@@ -65,8 +73,7 @@ class DecorationComponent extends Material {
           label: '字体大小',
           type: FormTypeEnum.NUMBER,
           props: {
-            defaultValue: 20,
-            suffix: () => h('span', {}, 'px')
+            defaultValue: 20
           }
         },
         {

@@ -2,9 +2,9 @@
   "name": "Decoration1",
   "title": "1#装饰",
   "category": "DECORATION",
-  "package": "decorate",
-  "packageTitle": "装饰",
-  "categoryTitle": "边框",
+  "package": "little_comp",
+  "packageTitle": "小组件",
+  "categoryTitle": "装饰",
   "icon":"fluent:border-top-20-filled",
   "size": {
     "width": 200,

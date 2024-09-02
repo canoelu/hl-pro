@@ -9,8 +9,8 @@ class DecorationComponent extends Material {
       group: ComponentGroup.DECORATION,
       name: name ? name : '4#装饰',
       id,
-      width: 200,
-      height: 10
+      width: 260,
+      height: 50
     })
   }
 
@@ -24,7 +24,7 @@ class DecorationComponent extends Material {
           label: '颜色1',
           type: FormTypeEnum.COLOR,
           props: {
-            defaultValue: '#00c2ff'
+            defaultValue: '#1dc1f5'
           }
         },
         {
@@ -32,7 +32,15 @@ class DecorationComponent extends Material {
           label: '颜色2',
           type: FormTypeEnum.COLOR,
           props: {
-            defaultValue: '#00C2FF42'
+            defaultValue: '#1dc1f5'
+          }
+        },
+        {
+          prop: 'reverse',
+          label: '开启反向',
+          type: FormTypeEnum.SWITCH,
+          props: {
+            defaultValue: false
           }
         }
       ]

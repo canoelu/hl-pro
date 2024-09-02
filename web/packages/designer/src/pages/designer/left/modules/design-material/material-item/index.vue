@@ -10,7 +10,7 @@
     <div class="material-item-header mb-2 font-size-12px">{{ material.title }}</div>
     <div class="material-item-center">
       <material-img v-if="material.image" class="list-img" :image="material.image" />
-      <svg-icon v-else :icon="material.icon" color="#999" width="48" style="height: auto" />
+      <img class="list-img" v-else src="./photo.png" alt="图表图片" />
     </div>
     <div class="material-item-bottom"></div>
   </div>

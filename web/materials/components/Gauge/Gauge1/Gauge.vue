@@ -87,8 +87,6 @@ import type { Material } from '@hl/core'
 import { useEventBus, useProp } from '@hl/core'
 import { onMounted, ref } from 'vue'
 
-import { http } from '@/utils/http'
-
 import type { Gauge } from './type'
 
 const props = defineProps<{
@@ -117,7 +115,7 @@ const resizeHandler = (entry: ResizeObserverEntry) => {
   scaleRota.value = [rate, rate]
 }
 
-const handler = (event) => {
+const handler = event => {
   const item: Record<string, any> = event as Record<string, any>
 
   if (propValue.data.datatag && item.TagName === propValue.data.datatag) {
@@ -132,13 +130,14 @@ onMounted(async () => {
 const initData = async () => {
   if (propValue.data.history) {
     try {
-      const resp = await http.post({
-        url: propValue.data.history,
-        data: [propValue.data.datatag]
-      })
-      if (resp.status === 200) {
-        dataValue.value = Number(resp.data.TagValue)
-      }
+      dataValue.value = 10
+      // const resp = await http.post({
+      //   url: propValue.data.history,
+      //   data: [propValue.data.datatag]
+      // })
+      // if (resp.status === 200) {
+      //   dataValue.value = Number(resp.data.TagValue)
+      // }
     } catch (err: any) {
       console.log(err.message || err)
     }
