@@ -7,7 +7,7 @@
   "keywords": [
     "hl-pro"
   ],
-  "author": "xingxingzaixian",
+  "author": "",
   "license": "Apache-2.0",
   "dependencies": {
     "@hl/core":"workspace:*",

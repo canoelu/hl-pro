@@ -1,7 +1,7 @@
 import page from './module/index'
 const local = {
   system: {
-    title: '洪鹿科技',
+    title: '智览世界',
   },
   common: {
     action: '操作',

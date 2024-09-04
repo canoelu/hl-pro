@@ -266,7 +266,6 @@ export default defineComponent({
       const editorRectInfo = document.querySelector('#editor')!.getBoundingClientRect()
 
       // 获取 point 与实际拖动基准点的差值 @justJokee
-      // fix https://github.com/woai3c/visual-drag-demo/issues/26#issue-937686285
 
       const move = throttleFrame((moveEvent: MouseEvent) => {
         // 第一次点击时也会触发 move，所以会有“刚点击组件但未移动，组件的大小却改变了”的情况发生

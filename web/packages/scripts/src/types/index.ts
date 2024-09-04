@@ -6,8 +6,6 @@ export interface CliOption {
   /**
    * Cleanup dirs
    *
-   * Glob pattern syntax {@link https://github.com/isaacs/minimatch}
-   *
    * @default
    * ```json
    * ["** /dist", "** /pnpm-lock.yaml", "** /node_modules", "!node_modules/**"]
@@ -27,7 +25,7 @@ export interface CliOption {
   /**
    * Options of generate changelog
    *
-   * @link https://github.com/soybeanjs/changelog
+   * @link
    */
   changelogOptions: Partial<ChangelogOption>;
 }
